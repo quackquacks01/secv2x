@@ -1,0 +1,107 @@
+KpqC Witnessed Trajectory Commitment 최소 프로토타입 실행 순서
+
+[1] Windows PowerShell에서 환경 확인
+
+py --version
+py -0p
+git --version
+wsl --status
+wsl -l -v
+
+Python 3.11 이상이 없으면 Python 설치 후 다시 확인한다.
+
+[2] 압축 해제 후 프로젝트 폴더 이동
+
+cd <압축을_푼_경로>\kpqc_wtc_prototype
+
+[3] 가상환경 생성 및 활성화
+
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+
+[4] 패키지 설치
+
+python -m pip install --upgrade pip
+pip install -e ".[dev]"
+
+[5] 환경 확인
+
+python scripts/check_env.py
+
+[6] 자동 테스트
+
+pytest
+
+정상 결과: 10 passed
+
+[7] 시나리오 실행
+
+python -m wtc.scenarios
+
+정상 결과:
+ACCEPT
+DUPLICATE
+VALID_UPDATE
+CONFLICT
+INVALID_UPDATE
+INVALID_UPDATE
+INVALID_SIGNATURE
+STALE
+ALL SCENARIOS PASSED
+
+[8] Evidence Bundle 확인
+
+Get-Content .\artifacts\evidence_bundle.json
+
+[9] 개별 코드 위치
+
+src\wtc\models.py       메시지와 결과 구조
+src\wtc\crypto.py       테스트용 Mock 서명 인터페이스
+src\wtc\merkle.py       Merkle Tree와 Proof
+src\wtc\commitment.py   Commitment 생성과 서명
+src\wtc\witness.py      Witness 판정 로직
+src\wtc\scenarios.py    실행 시나리오
+tests\                  자동 테스트
+
+[10] WSL에서 KpqC 소스 확인
+
+PowerShell:
+wsl --install -d Ubuntu-24.04
+
+Ubuntu/WSL:
+sudo apt update
+sudo apt install -y build-essential git cmake ninja-build pkg-config python3-dev python3-venv unzip valgrind
+
+git --version
+gcc --version
+cmake --version
+make --version
+
+mkdir -p ~/kpqc-work
+cd ~/kpqc-work
+
+git clone https://github.com/samsungsds-research-papers/AIMer.git
+git clone https://github.com/CryptoLabInc/HAETAE.git
+
+cd ~/kpqc-work/AIMer
+git rev-parse HEAD
+git log -1 --oneline
+find . -type f \( -name Makefile -o -name CMakeLists.txt -o -name README -o -name 'README*' \) | sort
+grep -R "crypto_sign_keypair\|crypto_sign_signature\|crypto_sign_verify" -n Reference_Implementation | head -50
+grep -R "CRYPTO_PUBLICKEYBYTES\|CRYPTO_SECRETKEYBYTES\|CRYPTO_BYTES" -n Reference_Implementation | head -50
+
+cd ~/kpqc-work/HAETAE
+git rev-parse HEAD
+git log -1 --oneline
+ls -lh
+unzip -l HAETAE.zip | head -80
+rm -rf unpacked
+mkdir unpacked
+unzip -q HAETAE.zip -d unpacked
+find unpacked -type f \( -name Makefile -o -name CMakeLists.txt -o -name README -o -name 'README*' \) | sort
+grep -R "crypto_sign_keypair\|crypto_sign_signature\|crypto_sign_verify" -n unpacked | head -50
+grep -R "CRYPTO_PUBLICKEYBYTES\|CRYPTO_SECRETKEYBYTES\|CRYPTO_BYTES" -n unpacked | head -50
+
+중요: AIMer/HAETAE의 정확한 빌드 명령은 현재 소스 안의 Makefile 또는 README 위치를 확인한 뒤 결정한다.
+각 저장소의 commit hash, 파라미터 세트, 컴파일러 버전, 빌드 옵션을 논문 실험 기록에 남긴다.

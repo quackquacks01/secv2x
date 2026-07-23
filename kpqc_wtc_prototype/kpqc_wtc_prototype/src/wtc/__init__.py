@@ -10,6 +10,7 @@ from .models import (
 )
 from .crypto import MockHMACSigner
 from .commitment import CommitmentFactory
+from .crypto_kpqc import AIMerSigner, HAETAESigner, KpqcSigner
 from .witness import WitnessNode
 
 __all__ = [
@@ -20,6 +21,9 @@ __all__ = [
     "TrajectoryEnvelope",
     "WitnessReceipt",
     "MockHMACSigner",
+    "KpqcSigner",
+    "AIMerSigner",
+    "HAETAESigner",
     "CommitmentFactory",
     "WitnessNode",
 ]

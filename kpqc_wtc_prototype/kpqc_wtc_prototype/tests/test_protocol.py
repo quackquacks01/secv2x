@@ -323,9 +323,9 @@ def test_signature_tampering_rejected_without_cache_update():
     c0 = create_initial(factory)
     tampered = replace(c0, merkle_root="ff" * 32)
 
-    before = len(witness.cache_by_consistency_key)
+    before = len(witness.active_head_cache)
     result = witness.process(tampered)
-    after = len(witness.cache_by_consistency_key)
+    after = len(witness.active_head_cache)
 
     assert result.code is ResultCode.INVALID_SIGNATURE
     assert before == after == 0

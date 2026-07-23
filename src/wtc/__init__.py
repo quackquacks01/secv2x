@@ -8,7 +8,7 @@ from .models import (
     TrajectoryEnvelope,
     WitnessReceipt,
 )
-from .crypto import MockHMACSigner
+from .crypto import Base64SignerAdapter, MockHMACSigner
 from .commitment import CommitmentFactory
 from .crypto_kpqc import AIMerSigner, HAETAESigner, KpqcSigner
 from .witness import WitnessNode
@@ -21,6 +21,7 @@ __all__ = [
     "TrajectoryEnvelope",
     "WitnessReceipt",
     "MockHMACSigner",
+    "Base64SignerAdapter",
     "KpqcSigner",
     "AIMerSigner",
     "HAETAESigner",

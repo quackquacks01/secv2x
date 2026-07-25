@@ -1,0 +1,19 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.25", ranksep="0.35", fontname="NanumSquare", label="정상 Commitment 처리 Sequence", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#555555", fontname="NanumSquare", fontsize=10, margin="0.13,0.08"];
+  edge [color="#555555", fontname="NanumSquare", fontsize=9, arrowsize=0.7];
+
+  actors [shape=record, fillcolor="#EDF4FA", label="{차량|CommitmentFactory|Witness/RSU|키 저장소·캐시}"];
+  s1 [label="1. Trajectory Envelope 목록 전달"];
+  s2 [label="2. Canonical Encoding 및 Merkle Root 계산"];
+  s3 [label="3. Consistency Key와 유효기간을 포함한 Commitment 구성"];
+  s4 [label="4. 차량 개인키로 KpqC 서명"];
+  s5 [label="5. Signed Commitment 전송"];
+  s6 [label="6. 차량 공개키 조회 및 서명 검증"];
+  s7 [label="7. 유효기간·초기 sequence=0·parent_root=None 확인"];
+  s8 [label="8. active_head / observation / digest 캐시 저장"];
+  s9 [label="9. Witness Receipt 생성 후 Witness 개인키로 서명"];
+  s10 [label="10. ACCEPT + Signed Receipt 반환", fillcolor="#E9F7EF"];
+
+  actors -> s1 -> s2 -> s3 -> s4 -> s5 -> s6 -> s7 -> s8 -> s9 -> s10;
+}

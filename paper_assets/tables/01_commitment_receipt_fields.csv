@@ -1,0 +1,23 @@
+구조,필드,형식,역할,서명 대상 포함
+Commitment,subject_id,str,주행계획 발행 차량 식별자,예
+Commitment,session_id,str,협력주행 세션 식별자,예
+Commitment,epoch,int,세션 재시작·키 교체 등 논리적 세대 구분,예
+Commitment,sequence,int,동일 세션 내 Commitment 버전,예
+Commitment,valid_from_ms,int,계획 유효 시작 시각,예
+Commitment,valid_until_ms,int,계획 유효 종료 시각,예
+Commitment,merkle_root,str,Trajectory Envelope 집합의 Merkle Root,예
+Commitment,parent_root,str|null,직전 정상 Commitment Root,예
+Commitment,context_digest,str|null,계획 변경 사유·근거의 해시,예
+Commitment,signature_algorithm,str,사용한 서명 알고리즘 식별자,예
+Commitment,signature,str,차량 KpqC 서명(Base64 또는 Mock hex),아니오
+WitnessReceipt,witness_id,str,관찰·검증을 수행한 Witness 식별자,예
+WitnessReceipt,subject_id,str,대상 차량 식별자,예
+WitnessReceipt,session_id,str,대상 세션 식별자,예
+WitnessReceipt,epoch,int,대상 Epoch,예
+WitnessReceipt,sequence,int,관찰한 Commitment 버전,예
+WitnessReceipt,merkle_root,str,관찰한 Merkle Root,예
+WitnessReceipt,commitment_digest,str,Commitment 전체의 SHA-256 Digest,예
+WitnessReceipt,observed_at_ms,int,Witness 관찰 시각,예
+WitnessReceipt,signature_algorithm,str,Witness 서명 알고리즘,예
+WitnessReceipt,decision,str,OBSERVED·ACCEPTED·PENDING·OBSERVED_CONFLICT,예
+WitnessReceipt,signature,str,Witness KpqC 서명(Base64 또는 Mock hex),아니오

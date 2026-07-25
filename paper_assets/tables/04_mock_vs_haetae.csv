@@ -1,0 +1,11 @@
+비교 항목,MockHMACSigner,실제 HAETAE mode2
+목적,프로토콜 분기·캐시·증거 로직 단위시험,실제 KpqC 기반 End-to-End 구현 검증
+암호 방식,HMAC-SHA256 테스트 대역,HAETAE mode2 공개키 전자서명
+키 구조,검증과 서명에 동일 비밀키 사용,공개키 992B·비밀키 1408B
+원시 서명 크기,32B HMAC 출력,1474B
+WTC 저장 형식,64자 16진 문자열,1968자 Base64 문자열
+부인방지 주장,불가,서명 검증 기반 기술적 책임성 지원 가능
+JSON 직렬화,직접 가능,Base64SignerAdapter를 통해 가능
+변조 검출,테스트 로직 수준,실제 HAETAE 검증 함수로 메시지·서명 변조 거부 확인
+현재 사용 범위,19개 중심 회귀시험 및 전체 분기 검증,정상 Commitment·Re-Commitment·Conflict·Evidence E2E 검증
+논문 활용,보조 구현·Baseline,주요 실제 구현 결과

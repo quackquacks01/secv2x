@@ -1,0 +1,51 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.25", ranksep="0.32", fontname="NanumSquare", label="Witness 판정 알고리즘 흐름도", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#555555", fontname="NanumSquare", fontsize=9.5, margin="0.12,0.07"];
+  edge [color="#555555", fontname="NanumSquare", fontsize=8.5, arrowsize=0.65];
+
+  start [shape=oval, label="Commitment 수신"];
+  sig [shape=diamond, label="차량 서명 유효?"];
+  validity [shape=diamond, label="valid_until_ms ≥ now?"];
+  digest [shape=diamond, label="동일 Commitment Digest\n이미 존재?"];
+  same_root [shape=diamond, label="동일 Consistency Key와\n동일 Root 존재?"];
+  diff_root [shape=diamond, label="동일 Consistency Key와\n다른 Root 존재?"];
+  latest [shape=diamond, label="세션 최신 Commitment 존재?"];
+  initial [shape=diamond, label="sequence=0 및\nparent_root=None?"];
+  older [shape=diamond, label="sequence ≤ latest.sequence?"];
+  next [shape=diamond, label="sequence = latest+1?"];
+  parent [shape=diamond, label="parent_root 일치 및\ncontext_digest 존재?"];
+  future [shape=diamond, label="sequence > latest+1이며\nparent_root 불일치?"];
+
+  invalidsig [label="INVALID_SIGNATURE", fillcolor="#FDEDEC"];
+  stale [label="STALE", fillcolor="#FDEDEC"];
+  duplicate [label="DUPLICATE", fillcolor="#FFF8E7"];
+  conflict [label="Receipt 생성 + Evidence Bundle\nCONFLICT", fillcolor="#FADBD8"];
+  accept [label="Receipt·캐시 저장\nACCEPT", fillcolor="#E9F7EF"];
+  validupdate [label="Head 갱신 + Pending 해소\nVALID_UPDATE", fillcolor="#E9F7EF"];
+  pending [label="Receipt(PENDING)·캐시 저장\nPENDING_UPDATE", fillcolor="#FFF8E7"];
+  invalidupdate [label="INVALID_UPDATE", fillcolor="#FDEDEC"];
+
+  start -> sig;
+  sig -> invalidsig [label="아니오"];
+  sig -> validity [label="예"];
+  validity -> stale [label="아니오"];
+  validity -> digest [label="예"];
+  digest -> duplicate [label="예"];
+  digest -> same_root [label="아니오"];
+  same_root -> duplicate [label="예"];
+  same_root -> diff_root [label="아니오"];
+  diff_root -> conflict [label="예"];
+  diff_root -> latest [label="아니오"];
+  latest -> initial [label="아니오"];
+  initial -> accept [label="예"];
+  initial -> invalidupdate [label="아니오"];
+  latest -> older [label="예"];
+  older -> stale [label="예"];
+  older -> next [label="아니오"];
+  next -> parent [label="예"];
+  parent -> validupdate [label="예"];
+  parent -> invalidupdate [label="아니오"];
+  next -> future [label="아니오"];
+  future -> pending [label="예"];
+  future -> invalidupdate [label="아니오"];
+}

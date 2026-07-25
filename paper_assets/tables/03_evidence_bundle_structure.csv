@@ -1,0 +1,9 @@
+항목,내용,검증 목적
+consistency_key,"subject_id, session_id, epoch, sequence",두 Commitment가 동일 논리 버전임을 확인
+witness_id,충돌을 확정한 Witness 식별자,증거 생성 주체 확인
+detected_at_ms,충돌 탐지 시각,사건 시간선 구성
+commitment_a,먼저 관찰한 유효 서명 Commitment,Root A와 차량 서명 재검증
+commitment_b,나중에 관찰한 유효 서명 Commitment,Root B와 차량 서명 재검증
+receipt_a,Commitment A에 대한 Witness 관찰 영수증,Witness가 A를 관찰했다는 증명
+receipt_b,Commitment B에 대한 OBSERVED_CONFLICT 영수증,Witness가 B와 충돌을 확인했다는 증명
+판정 조건,"동일 Consistency Key ∧ Root A ≠ Root B ∧ 두 차량 서명 유효",Equivocation의 암호학적 재현

@@ -1,0 +1,43 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.55", fontname="NanumSquare", label="WTC 전체 시스템 구성도", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#555555", fontname="NanumSquare", fontsize=11, margin="0.14,0.09"];
+  edge [color="#555555", fontname="NanumSquare", fontsize=9, arrowsize=0.75];
+
+  subgraph cluster_vehicle {
+    label="차량(Subject Vehicle)"; color="#8DA9C4"; style="rounded";
+    planner [label="협력 주행계획 생성기"];
+    envelope [label="Trajectory Envelope\n정규화·분할"];
+    merkle [label="Merkle Tree 생성"];
+    commitment [label="Trajectory Commitment\nConsistency Key + Merkle Root"];
+    subject_sign [label="KpqC 서명\nHAETAE / AIMer"];
+    planner -> envelope -> merkle -> commitment -> subject_sign;
+  }
+
+  v2x [shape=component, fillcolor="#F7F7F7", label="V2X 전달 계층\n직접 수신 / Gossip"];
+
+  subgraph cluster_witness {
+    label="Witness / RSU"; color="#6B9080"; style="rounded";
+    verify [label="차량 서명·유효기간 검증"];
+    decision [label="Consistency / Chain 판정"];
+    receipt [label="Witness Receipt 생성·서명"];
+    cache1 [shape=cylinder, label="active_head_cache"];
+    cache2 [shape=cylinder, label="observation_cache"];
+    cache3 [shape=cylinder, label="pending_update_cache"];
+    evidence [label="Evidence Bundle 생성"];
+    store [shape=cylinder, label="evidence_store / JSON"];
+
+    verify -> decision -> receipt;
+    decision -> cache1 [label="최신 정상 Head"];
+    decision -> cache2 [label="Key별 Root 비교"];
+    decision -> cache3 [label="비순차 Update"];
+    decision -> evidence [label="동일 Key·상이 Root"];
+    evidence -> store;
+  }
+
+  auditor [label="사후 검증자 / 책임성 분석\n서명·Receipt·Consistency Key 재검증", fillcolor="#FFF8E7"];
+
+  subject_sign -> v2x [label="Signed Commitment"];
+  v2x -> verify;
+  receipt -> v2x [label="Signed Receipt / Gossip", dir=both];
+  store -> auditor [label="검증 가능한 증거"];
+}

@@ -1,0 +1,14 @@
+구현,시나리오,기대 코드,확인 결과,논문에서 가능한 주장
+Mock,정상 초기 Commitment,ACCEPT,통과,초기 Commitment 규칙이 구현됨
+Mock,동일 Commitment 재수신,DUPLICATE,통과,중복 메시지 처리 구현
+Mock,정상 Re-Commitment,VALID_UPDATE,통과,Parent Root와 Context 기반 정상 갱신 구분
+Mock,동일 Sequence·상이 Root,CONFLICT,통과,Equivocation 판정 및 증거 생성
+Mock,잘못된 parent_root,INVALID_UPDATE,통과,비정상 갱신 거부
+Mock,Sequence 점프,INVALID_UPDATE 또는 PENDING_UPDATE,통과,순서·부모 관계 검증
+Mock,서명 후 Root 변조,INVALID_SIGNATURE,통과,서명 검증 전 캐시 미갱신
+Mock,유효기간 만료,STALE,통과,오래된 계획 거부
+HAETAE,정상 초기 Commitment,ACCEPT,통과,실제 HAETAE 서명으로 초기 처리 성공
+HAETAE,정상 Re-Commitment,VALID_UPDATE,통과,실제 HAETAE 기반 정상 갱신 성공
+HAETAE,동일 Sequence·상이 Root,CONFLICT,통과,실제 HAETAE 서명 두 개의 Equivocation 탐지
+HAETAE,서명 후 Root 변조,INVALID_SIGNATURE,통과,실제 HAETAE 검증으로 변조 거부
+HAETAE,Evidence Bundle JSON 생성,파일 생성,통과,실제 KpqC 서명이 포함된 재검증 자료 직렬화 성공

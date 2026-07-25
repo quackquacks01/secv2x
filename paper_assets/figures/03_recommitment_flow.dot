@@ -1,0 +1,26 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.3", ranksep="0.38", fontname="NanumSquare", label="정상 Re-Commitment 처리 흐름", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#555555", fontname="NanumSquare", fontsize=10, margin="0.13,0.08"];
+  edge [color="#555555", fontname="NanumSquare", fontsize=9, arrowsize=0.7];
+
+  start [shape=oval, label="주행환경 변화 감지"];
+  create [label="새 Trajectory 생성\nsequence = latest + 1\nparent_root = latest.merkle_root"];
+  context [label="update_reason / evidence_reference로\ncontext_digest 생성"];
+  sign [label="새 Merkle Root를 포함한 Commitment 서명"];
+  verify [label="Witness: 차량 서명·유효기간 검증"];
+  seq [shape=diamond, label="sequence가 정확히\nlatest + 1인가?"];
+  parent [shape=diamond, label="parent_root가 최신\nMerkle Root와 같은가?"];
+  ctx [shape=diamond, label="context_digest가\n존재하는가?"];
+  accept [label="캐시 Head 갱신\nReceipt decision=ACCEPTED\nVALID_UPDATE", fillcolor="#E9F7EF"];
+  invalid [label="INVALID_UPDATE", fillcolor="#FDEDEC"];
+  pending [label="부모 미도착 조건이면\nPENDING_UPDATE 저장", fillcolor="#FFF8E7"];
+
+  start -> create -> context -> sign -> verify -> seq;
+  seq -> parent [label="예"];
+  seq -> pending [label="아니오: 미래 sequence이며\n부모 Root 불일치"];
+  seq -> invalid [label="그 외"];
+  parent -> ctx [label="예"];
+  parent -> invalid [label="아니오"];
+  ctx -> accept [label="예"];
+  ctx -> invalid [label="아니오"];
+}

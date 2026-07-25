@@ -1,0 +1,129 @@
+{
+  "run_id": "20260725T025020_934991Z_equivocation_haetae_seed1",
+  "evidence_bundles": [
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W2",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "parent_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "AhQBQACwMACAAAMEKIUjFgACAZxBIDYmqhEoKKMBABQFkMMIiZIr5NHPm7LUzbTyRYN2aAqShvj42yguKg5n/tFLClc3wASDOcYo2X1cMVcWVqOkwRtf6hcji96yLRh5q2x8blw+mZHECI0nrynwa8Fv0lMNAmII7fuL1DqQqmS8mkrBlpWzLKtBvdDKgfcz3sywjHQor1MIokFyONdMZEQzVbKq61I8nHzkZt442CrTil5ajhzm0YvpVMtNuplQQgko78F3h0GFS6dwY9YeFvWoaDjmmO5AEufl1fnIEJ2pg+UHyl/BhZU/YuFOru6Xd0cJjeYlrv2+t4D7FGGDGUYpFS9i9cxiLZNIYJxG6/eCiticglL8M8tR4n+Va9iy673mxr01DIM3edBcEo6HEaGVDJXNnw4O41ZrDS1fQm1AVjRDsDLoMgNAOLayiM9Qyp+ynDf9LfYqsYd5gmS/VSHn9x/LpANeMRGb6MI0lVX8W53fRtz+PTJbQ25EoSUIW6IZn61KmvCSm/ym8SVgxxR3Uxue1NXntUGudNzGo0y2gvlH93SO/hXc/WX3aokWKmlTgEHZm1LmqTTX/W/Wc7LFjsQiLhZVYji87v7TjIe/jAOtAVw4sZvTdoKIkUz30qCzyFsQzrjN+m+PNBdjxCmyeOXwtUdvB5wjVwtPw+W0C5nTzngA5Ub3tCtUjV/rlsi4IdFtTg+baPX5E8SdpxXjYlIoQGFYfq0Se8vbPokBqRHp6ZPTUb36Xe3XAzltGdg6rcANlqlAi/uJ0B9772LREwAqeiU2XLPhpiyJ+OShv9cMt/Lqr43/NSWBjFl4bfhKpvEX2uaSIbh9jt/pwlG4GEq8wGNAZJSkBp1hIxeMd83TcbQkl4g3QOFfek5fbCAMGaISNEtx9HSc42lqX2ooAeueFrDWYElRIC7WbWQbagMmyi57WmZK/V9qLlmbIZ0cjuhgqmzALjWyxcRQX7q6I8rtk6jad3VNvnWyGle+2/58DuZwaRfyPNpYK/+ysC6+jLwe6aKuPzkruO76YaPLp4Kcg9KABDDW9KNKtcCtVzSDXuHk2m2jJ5MYUnjDWniGjaKighsnAtKlNij2OE3Nv1p4d0giNA+53hOyYXwU+qPiMXjhSytgHguu1vzXDngROAb5TQ9dDLFtaLQUauZpTA0IroP/OMybAoRftgslRA7N+ugkk4rroFDjnn6wBC2RudUDlYoPF2bxcrnrkUmqGB1/kmurH2STvMMZBEGHEWJkiXJnJ84gcvxIZaD/mpgdQCHYSsJZGaruGz5bMrmJlTVRHprzvavPGM0Rlz5MZZrKebayjz4dFnKcN1dO+Qi19j33U5arqL7Yh4MOMGuzgM5SdZxC+Wtu1CAlVUpABR5EfD8E4ND9YBsy/thvi4btTHdhQfyLCXOvZV5U6lE+YHn9Cb8AS4TfcdcrezAFmsrrqX6LdGRgCDCTrNfI+QlPlYKoFzDJleALRHqDFTcEfwcoUe+Wdmeqes63pFmNghczFNV5uwr4AyuMpU5IXLM5uqlx2f8wgaSwwjjMLJdWlXDsyH/L82sgGISWBYCusW7Wrq5rYnPFlwD35VULWn9GeN8/SIFg2v39cBbWtJRMiJ3QM6yYAcuzWHOAGPTunlyBpXf18ZAXbEnfwbHGtIAzzCh0pWmNwZ9k66W9kKso9+qBUpjeiSQn+LtTfg2oE2vDamn3Nq+RFoH7SyIi7Rz/mgrXjOhm/6qYIob1eo51t5ht6JzY+dehzSv/vSJk6eABL0mDVa/wgvUiy8UZ1aBRS61GldiygiFje/voyZLCfVx1M5tI/jOHyC/IoYRVlShISDrGHqh7mxP23qhaD5fBw4f/kizDGcb1mpdJZPEdGeJinHEschK55GtTD5krEAICbEkvpixui4SH7CJ9AJbEs/qcPiDF3VgOWGQJ6NMedzpDQDbcLh2ay9WQAAAAAA=="
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "parent_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "lWEGkBACGANAgEARQQoJAUlAAgIGATC0hYCKkQAAEigsMkSNLj7nMmj7Ml8E8At4eNNYeQ9xxJ5MjUA6VawucI5x6SMN1PmPS6V1uV70LkOjcR2LpbStahF8MbxwUbNLXa8Qe3jwMU/tl9cf4c0PZLQGxo3iHYiV6QTCOXzKWokwSDwZFGO1ZCsJY2suEw1SFkbLaEkLaK32WSFjem/UB1HxPpHxEVpcr1/aPUtZ7uMvyd/fIkW5c1R6aEsUj8wHql0yzeCotQcmTik/qIpOYpxvZLBe1o4iQa6nLpjP1T53IhHgu+0ZvpwJRpta09vKYEcAMQUZnU8T/rGT9VwAl3QBdyqgLPiVcly9GYHa7CrkiO7kqQADQHDeYDrm5Nm8SZmam/J8ksIueNsMbhy3hOrObmHIs3NAdp3f3qaaxj1q3ZV02HjJGkKDTiV4lRBBVuKqoHaBFENdY8VHBancqxaItRFIHAR9YJAIwkLo3tCtH5t3HMPr7Lzlc8TMuskWshVZugAVKgP8ZrwVhDxjY/XjhuSrqLaUZUcq4jGDnPMjC36fcFRGbU5PQFH9I1pnr1Wbu4nvUPHcIqfZ8agB9+wLEGkjnCwdtPVS6AR8/f/gA2CCcDXiPW0sNVIr9Tj0b/sk2IlR++pcEq6DLm4ie/YDjEJJVcn4OjlrLAqAPd2kaH0akiCUgZ9xEcMGcKKDEesozd0AqNZrR3GcGccQTOUyahja8WILG2IRHQFe/Lh5j7l4vF3YnWu+7OCbxOD/4EX3X0Yjlx6RHagdgXvCBD70TN0ufKl86HweTLSE2bRxucWwq3jPiHDvz3JHAr72z6AXwJF38R30r2k6QXxuIeWebP32qi7blrAG94aQkQO3mIfWABhC1aWhGi3nBiLbwiYNFtlFCwxx2UZDa3nTzVju/SevgCPDdq2qgYPxUennTlA1TaWuQ6d9/A/E8woeFTna/Uak5a3OJWUEI1to+vg6D7cEf6imawUG+I9EdW+nbMBVsm5H2p1DGYA2YklW4p/PMfAKP+v3edq3gbqqBeyzY6dy2KS7oStVvKcDWvSiusZzkL6NHqMxPg6DDvILcnRWNDVyOJLazF8kl8qj0SNYBc66qajDw5ncti8BGVu8YzPKu5/Bkc2X33khRMthR8QjZlWVQLvd3zcpjcYC+Huxkn1zWYtt80MaJ+11maKpA8IkcYnCitUOR9tfjOXUlcdh+ZYMwAMfqooCEHPQMmz8Lf3bqXs8jjRsiAieju+UIznmDZ1WcCpWnJ8t5xXATEw2LbmcUvr5iiJu4rgTJBKHwhFDAZ04lPxMeuq0MEUShSpJ2z1fg5/G+v4iAb5lkfXejSIc6ediVoxEAOmmDjcn2RMbzovCJd1ObJMzaEWaGx0GAcDEnjycio1ShAgTjYOTt+llcOdozH3WFUq+u4/aNDaQ5bBSCrb0jArA3SfSp3FRYqEnRAZWkC3tUwMJkIa5Jx1Od1fTwXE5n1QXcveeLPw6GxpiAAVAUZd/7TRCyCzN5C2uuCjPMa2rF7J1DOl1KpELqexqHtTzIYgOGMRss3tJWj27FCevf8HQXLRb1fn6287Q3Pme2aGC1K6PIK75WKazKeo7KoqcuttvBR88R6IR8uRAjz8LaDy2BwUscXjKZoUIp2u3x6qZhJNSg4mNP06Rglz2JZDYNydqQr+B8YaBdv6xMGaB+w2d3rIKr3WjzA6rEZLg699nKs0c0CtS/VogCYbXFNNpBIItEJWml6v0drBiYs45q4k1bS5TAG7ech0KirAd+Y6s7MFjWMXz4U22nNvYFfV7qDsPzL/dYCJzU4kv9OnxQWaM6pgSv6RnSB/x5MTyAUa4URcLP4yVc5chcQCQq3JBa0ebyMqw1seLoIH/LzHAKnjcYHgaS6NPtbMe+7z4tHZ1Q5nIkMtVEufvJg5wufeb6JytTQP+4bUT9Yy9TtZE/poAAAAAAA=="
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W2",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "commitment_digest": "253da748d8f8958ccb05231ff09fa752b7e14eb49cbbc146f81599e9342dca47",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "AgpFgJAMAxEAARgGDCREAgYAtgCggl6GUESIhGAIAICAv3n4IGfN+uA3BR+YyQcRb+jWXMM7L6IVoupkp6eizz191tnvUVTsGiC4Wyzl+6A/bjO2KgSaBkU7dWocI6v0xDp7nEbX5onvVifzb9DHZFI3r3tCXB+OWbdqRt11QW/bIHh+DmPwv5PsTTaWtZMYvPrZrvafK2dIUn1tXawIEuBpgRBE1uQsHAzcykjP1H55Me50Bz4m0vqgz6fWLXnm4+HG4rj6MLTY2hIiT9q0WjH0Ew89qpJVCdcNAA5WKDdbZQMS/36j8jDYcGSkXe1ptg7GaOe7Bz6cmyWy+L8w9bmeh+5Wdwq66kLNVM7fS4HqvZJ92O0Pxd334BCBOS5TdCUSfGBrwpCUOarGXxy20VIYxPY7l+UD0PwEDFOY4pD7cjIpfqYmksn7cjAggKw7KtLUYYvHMw8RNY8830f6ORaMmWM68nQLbhT62AHTYojyMp+DzewRSz2YcsBlBuFJ0BwrlBY6fO74lBY7g96Er0aivxUFO3Qb/3E+jIj/H0tu4pI6FhPExxcy/nAaDAE18pR/9DzIZoa3e8taXdP228p23BhnXHctYILaxW1K4yeHzz8YgFZf9w4tNwDN7OfEViFJoIDV6/FaIZfHlhagAsGcHRUE4gDNHMIPYYF46NXv7XLDhgKyN+6BCv3rCUZZ7Er9O3WuN0pOOQNpTb2cTKvEnAFleXFfzd+LFVvdEuxMR9BpkWwHPS3Ov7lcnRDRAi/1+Zy8DV+HuioN6cOH0TZgbWBfGqU6YNmT9X3/20Rp0lZZXyf4Vg8XkgMd8tKkAtK0WQZAMt+gzKHlU0MGuWX134pt/M/sFn+cT4TPlZG6eeTDkPFbIfBY1WEIA3ESS7gXCUqT0K7Lnzn4w5OqEeOSjewUyKVNJs+SOP3KlyNhsbxZr4OA3FjALJ6WA6oNnrLL+M/VZxPrC1d1lGrCF68XCkfLyMWaELnNjMtTeYMP/MJ6WE23/96Ci6V+pYzulG61RJ00ywjfyknMcRTbQcGuVXJBFpslQ9V6WSinHYJfHjTJjlOzt48UPpWOtW+XGKQPyv3vHRMGJXXdJsrNxH8GptMXhaQYQCVflfHl1SeQGgRpEoUMuZoeCR2vZqRjm9SnuiOsimpblQ0taDgYUu1FxsdNwvD+Yz2jLC5obOoMWwx9SVM63oFpYYFnjBsf945c87dF+iwGPsQNJ7MF4AiJ4SWLyRZ01fFPJL/34CTa9rE/Y4hAGb13UZ29Lw5iPuQbCQCOVNOqUSU8KYl0gkGtjxkUZIBPrcwXUSnftIaEb1sk2SHbtFDsvEFCNPoiNF46wSA2BCFSlbpcHgImEeeqAhaePvMfK7MYQ2vC5Igyvgj3XzAPpwI5Qz8Nhl1tiYjq008EWHA9tJsD394HdmmgD9QMnWgRRs2DcEMckXjn6rhOx/t1x1pdd75QP4tNyz9kpm+X0LmN7fsn31w3LcOMZJmUdTGcZub9eiKiBHRynXziGQTLlSqQRNStmigNjLr8JhU94/cWnQl/Oq/Skq4Bgq5T3pmJsu0nPeRhhLs9Ipnpz8ncHOfhsiyDMosRAYUZO5y1RV3tH0rnULyUq5qCSPI4TothKFDNIBXz0Z8xjPeRNYQDc65TMCEbJfXtAIr6zY/2PSiq9ukhJvdacKbQkhrKHDbdkTv3Lci2aB9iWC0xz+XR0ERrCa+P+rs7CxoViST+RQGreVI/50qffjIy9MKqx1LKzpbvFb63RakfcA6sKC7tV1wP5cDuBOCvQ+1O+vT5ufMC/WxlMOYZ67HeiGdrO53p4gBhd2LaAlmTj9h4HdyVe+inKcXM7Z+nHeSPETffCgY7dDLKF1Ikc0lszRge6SGUV+oyAy49Lq/kG+lQNc5AuCDqHVGHlKWT+ozYZENh7JrhVOyz3Y6UUBk0Yb4WJ+Ez6cahdJtgAAAAAA==",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W2",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "commitment_digest": "c5a35d118a40230a4991ca89e18a610425e944ce978629fa41fa763bc82f5278",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "QAgAZIBQCNoaEGhKhEEJEwRATkcACILAAAABImYEAoAnhrSVF+1irGZby8qz+YzIg5lxmbNZ/uFdCJLziPaRFN0Xpo7hxrcPP+qA0P+Yy+U810sWYiKms1zwwgzSkfU2ckfujlD4S+KeVy7Q2FOzRb9iqUGDgKfzNyYjMDS7P/Btl4GVb564lWAaoHw4YJv+HhgmVWfvKRX0X21lfYVZJ7VmD87UlQ4zOQfPWCKEh7xwQVIhhcSTKTPscn3k89LxVlDofmdH+PFDCl2/Z6XudYnOlBoDFHxxb6atcMenUUkoSucoZDgiL9OU2ZW0/0mbkDHwfsvLZkaC2E6pwPd0B5r0inHo0jcfuGDCiJUOZjKO2Q7lRB9p3xyBnKVrf8Ortx3MX5Ih+/SH6NcbC/TE7ouH3m119w4fXdouqKt15ghF6ki5MpMKEijeVfT+t7mhF7JyYW/7f8QM+9BavHV7XqWODzLlLD3fMh74eccqzDmWzStxsv1rjR5O6mDHjBZMgwylw0MOrtF1PGdZnE+2oUQH9A+ocTk9dW91h2nyStJbFqE7s9CnharDXMMWT7q4Opaqt1iVGm0yii8QgQjtW6RUfetdA6pQJcmRDKJyCdiIfqjvQ/fq9IJwoKw3RgwMMUyA08FSig0r+pA8xY7GC7HD0dRO9I/pKBGSZCzpiaoHZFItoaA9qKTRhh2TQRy6xsgjZuFdo/HUMkCRIiyXi33MRhLwklbselEVcdSojOocFwPInehHVNzKPjVtLSDtsB8Q7j54FpqlBFIr4ZFhbyiL+LEnYDZe8En5vzY8isGOIOgyK0ySj8PKZMZdSjduBQtIZvnTp5xIxDF2slHEhpQF0FmVy0giZW3vqfHbhfou2Mgkn51Nsl97G/JQB+gH4EGWS1IrZ9J5oaoMOehYPGSseYdf804iNdimcuoZ1ppQP41JDJnL9Ow0YGxugjcol0lWG41ZX4Pxu7pO/iAffn5S6Elr9+N+sBgyQvPdwA79w98ukESNd/Dfbis4Y+3N3VC/7gYOdqEHHvuIYVFhfyxoK0dQhCIfPm2RLM7Jko7QeG6ZgFr7NsDEVH2QZbylXGOACF4crAV7FDyJSYizWRm/vJKdSIvFWxwJn3CjzoqpAuXCwxPYY8tKcz21bF1jyC7j4qz40Wb5eCCE1rUUPHDVI+1W53v9WBFt+9HarE5ekpzyPTQUQjsITxrAB/aYGkP2FcwePhtTsZ64c0dqU3dNUf3L4yfmbC2AVZst8AxuF0GPBbrvVgsmc/GhgefhRe9w+O2gE63xiMA/5WlX96PO7g8kzG1BZzXrZtEmMEKp5TGr2SvHJvGaXrDarxYWYh3nBM/V0C85Cql578Rwv27wtHz8O0kmxcf7Wl48Kh6ObI+1+FecbJHFsnsJKZiNioTrMM8dYaBtyKcWm4O2qckMunoF07O7LXkpo0eOyj9akThFKJHxQIozPDuTT3D1h0RB++tfRT24kU0v0WAOdAPgoXOw7MfT72eWulmvmo6Tvjhukmv0duPQfyQ9JiRyIOuKeh7luZhurYLfqIApnZWKg1bO12vEd5u+kHM+I4bY7RocPsNceNJLF/Q9uW5ASWYWELMczxKd5UONgIZenzYDHqG90T20Xwfig1ZTV6947EwhmuhJFDVw6liKq9L6N+0D9VQsjRAz9p86dsWSdu4VWMXB0tsVY2uzxfQpfptpck5xW4td7k1ys9+RG/wqw20Q0Uur+pmK5iOIEDL3KDRmaYLeL3cSXH89UQJSpn8My/sFN/7Ry/a6BwFeLTImUi4pKb3I27Vxm8ErhVbeD6xfPIK4ba00h+0kdxkrn1xzQhqSYYit8oYXkXnMuR+izx5d0s867bF4DWocBdXuL76928PRabDkP+cEvBtkhEpTirt1o8yBCTD+C/EdXhU5kjSB46aVWU3uqbMlb9hNTTjfLzuNUGpdekMkAAAAAAAAAA==",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W1",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "parent_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "lWEGkBACGANAgEARQQoJAUlAAgIGATC0hYCKkQAAEigsMkSNLj7nMmj7Ml8E8At4eNNYeQ9xxJ5MjUA6VawucI5x6SMN1PmPS6V1uV70LkOjcR2LpbStahF8MbxwUbNLXa8Qe3jwMU/tl9cf4c0PZLQGxo3iHYiV6QTCOXzKWokwSDwZFGO1ZCsJY2suEw1SFkbLaEkLaK32WSFjem/UB1HxPpHxEVpcr1/aPUtZ7uMvyd/fIkW5c1R6aEsUj8wHql0yzeCotQcmTik/qIpOYpxvZLBe1o4iQa6nLpjP1T53IhHgu+0ZvpwJRpta09vKYEcAMQUZnU8T/rGT9VwAl3QBdyqgLPiVcly9GYHa7CrkiO7kqQADQHDeYDrm5Nm8SZmam/J8ksIueNsMbhy3hOrObmHIs3NAdp3f3qaaxj1q3ZV02HjJGkKDTiV4lRBBVuKqoHaBFENdY8VHBancqxaItRFIHAR9YJAIwkLo3tCtH5t3HMPr7Lzlc8TMuskWshVZugAVKgP8ZrwVhDxjY/XjhuSrqLaUZUcq4jGDnPMjC36fcFRGbU5PQFH9I1pnr1Wbu4nvUPHcIqfZ8agB9+wLEGkjnCwdtPVS6AR8/f/gA2CCcDXiPW0sNVIr9Tj0b/sk2IlR++pcEq6DLm4ie/YDjEJJVcn4OjlrLAqAPd2kaH0akiCUgZ9xEcMGcKKDEesozd0AqNZrR3GcGccQTOUyahja8WILG2IRHQFe/Lh5j7l4vF3YnWu+7OCbxOD/4EX3X0Yjlx6RHagdgXvCBD70TN0ufKl86HweTLSE2bRxucWwq3jPiHDvz3JHAr72z6AXwJF38R30r2k6QXxuIeWebP32qi7blrAG94aQkQO3mIfWABhC1aWhGi3nBiLbwiYNFtlFCwxx2UZDa3nTzVju/SevgCPDdq2qgYPxUennTlA1TaWuQ6d9/A/E8woeFTna/Uak5a3OJWUEI1to+vg6D7cEf6imawUG+I9EdW+nbMBVsm5H2p1DGYA2YklW4p/PMfAKP+v3edq3gbqqBeyzY6dy2KS7oStVvKcDWvSiusZzkL6NHqMxPg6DDvILcnRWNDVyOJLazF8kl8qj0SNYBc66qajDw5ncti8BGVu8YzPKu5/Bkc2X33khRMthR8QjZlWVQLvd3zcpjcYC+Huxkn1zWYtt80MaJ+11maKpA8IkcYnCitUOR9tfjOXUlcdh+ZYMwAMfqooCEHPQMmz8Lf3bqXs8jjRsiAieju+UIznmDZ1WcCpWnJ8t5xXATEw2LbmcUvr5iiJu4rgTJBKHwhFDAZ04lPxMeuq0MEUShSpJ2z1fg5/G+v4iAb5lkfXejSIc6ediVoxEAOmmDjcn2RMbzovCJd1ObJMzaEWaGx0GAcDEnjycio1ShAgTjYOTt+llcOdozH3WFUq+u4/aNDaQ5bBSCrb0jArA3SfSp3FRYqEnRAZWkC3tUwMJkIa5Jx1Od1fTwXE5n1QXcveeLPw6GxpiAAVAUZd/7TRCyCzN5C2uuCjPMa2rF7J1DOl1KpELqexqHtTzIYgOGMRss3tJWj27FCevf8HQXLRb1fn6287Q3Pme2aGC1K6PIK75WKazKeo7KoqcuttvBR88R6IR8uRAjz8LaDy2BwUscXjKZoUIp2u3x6qZhJNSg4mNP06Rglz2JZDYNydqQr+B8YaBdv6xMGaB+w2d3rIKr3WjzA6rEZLg699nKs0c0CtS/VogCYbXFNNpBIItEJWml6v0drBiYs45q4k1bS5TAG7ech0KirAd+Y6s7MFjWMXz4U22nNvYFfV7qDsPzL/dYCJzU4kv9OnxQWaM6pgSv6RnSB/x5MTyAUa4URcLP4yVc5chcQCQq3JBa0ebyMqw1seLoIH/LzHAKnjcYHgaS6NPtbMe+7z4tHZ1Q5nIkMtVEufvJg5wufeb6JytTQP+4bUT9Yy9TtZE/poAAAAAAA=="
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "parent_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "AhQBQACwMACAAAMEKIUjFgACAZxBIDYmqhEoKKMBABQFkMMIiZIr5NHPm7LUzbTyRYN2aAqShvj42yguKg5n/tFLClc3wASDOcYo2X1cMVcWVqOkwRtf6hcji96yLRh5q2x8blw+mZHECI0nrynwa8Fv0lMNAmII7fuL1DqQqmS8mkrBlpWzLKtBvdDKgfcz3sywjHQor1MIokFyONdMZEQzVbKq61I8nHzkZt442CrTil5ajhzm0YvpVMtNuplQQgko78F3h0GFS6dwY9YeFvWoaDjmmO5AEufl1fnIEJ2pg+UHyl/BhZU/YuFOru6Xd0cJjeYlrv2+t4D7FGGDGUYpFS9i9cxiLZNIYJxG6/eCiticglL8M8tR4n+Va9iy673mxr01DIM3edBcEo6HEaGVDJXNnw4O41ZrDS1fQm1AVjRDsDLoMgNAOLayiM9Qyp+ynDf9LfYqsYd5gmS/VSHn9x/LpANeMRGb6MI0lVX8W53fRtz+PTJbQ25EoSUIW6IZn61KmvCSm/ym8SVgxxR3Uxue1NXntUGudNzGo0y2gvlH93SO/hXc/WX3aokWKmlTgEHZm1LmqTTX/W/Wc7LFjsQiLhZVYji87v7TjIe/jAOtAVw4sZvTdoKIkUz30qCzyFsQzrjN+m+PNBdjxCmyeOXwtUdvB5wjVwtPw+W0C5nTzngA5Ub3tCtUjV/rlsi4IdFtTg+baPX5E8SdpxXjYlIoQGFYfq0Se8vbPokBqRHp6ZPTUb36Xe3XAzltGdg6rcANlqlAi/uJ0B9772LREwAqeiU2XLPhpiyJ+OShv9cMt/Lqr43/NSWBjFl4bfhKpvEX2uaSIbh9jt/pwlG4GEq8wGNAZJSkBp1hIxeMd83TcbQkl4g3QOFfek5fbCAMGaISNEtx9HSc42lqX2ooAeueFrDWYElRIC7WbWQbagMmyi57WmZK/V9qLlmbIZ0cjuhgqmzALjWyxcRQX7q6I8rtk6jad3VNvnWyGle+2/58DuZwaRfyPNpYK/+ysC6+jLwe6aKuPzkruO76YaPLp4Kcg9KABDDW9KNKtcCtVzSDXuHk2m2jJ5MYUnjDWniGjaKighsnAtKlNij2OE3Nv1p4d0giNA+53hOyYXwU+qPiMXjhSytgHguu1vzXDngROAb5TQ9dDLFtaLQUauZpTA0IroP/OMybAoRftgslRA7N+ugkk4rroFDjnn6wBC2RudUDlYoPF2bxcrnrkUmqGB1/kmurH2STvMMZBEGHEWJkiXJnJ84gcvxIZaD/mpgdQCHYSsJZGaruGz5bMrmJlTVRHprzvavPGM0Rlz5MZZrKebayjz4dFnKcN1dO+Qi19j33U5arqL7Yh4MOMGuzgM5SdZxC+Wtu1CAlVUpABR5EfD8E4ND9YBsy/thvi4btTHdhQfyLCXOvZV5U6lE+YHn9Cb8AS4TfcdcrezAFmsrrqX6LdGRgCDCTrNfI+QlPlYKoFzDJleALRHqDFTcEfwcoUe+Wdmeqes63pFmNghczFNV5uwr4AyuMpU5IXLM5uqlx2f8wgaSwwjjMLJdWlXDsyH/L82sgGISWBYCusW7Wrq5rYnPFlwD35VULWn9GeN8/SIFg2v39cBbWtJRMiJ3QM6yYAcuzWHOAGPTunlyBpXf18ZAXbEnfwbHGtIAzzCh0pWmNwZ9k66W9kKso9+qBUpjeiSQn+LtTfg2oE2vDamn3Nq+RFoH7SyIi7Rz/mgrXjOhm/6qYIob1eo51t5ht6JzY+dehzSv/vSJk6eABL0mDVa/wgvUiy8UZ1aBRS61GldiygiFje/voyZLCfVx1M5tI/jOHyC/IoYRVlShISDrGHqh7mxP23qhaD5fBw4f/kizDGcb1mpdJZPEdGeJinHEschK55GtTD5krEAICbEkvpixui4SH7CJ9AJbEs/qcPiDF3VgOWGQJ6NMedzpDQDbcLh2ay9WQAAAAAA=="
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W1",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "commitment_digest": "c5a35d118a40230a4991ca89e18a610425e944ce978629fa41fa763bc82f5278",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "ZCgQREJQkAlAAwgogEI8QSRAQQAuAAIBIxMIDJgEQAqqH6K1R6GhYshFOY3MRi9XrQ/vhw8lF0fEheY41611BQeREfZVqXw6LUnVaCCgiIDsjX87X5G1MhAmE1p3KPCpOqdK8nODNqgnrCYDpGVwjtibAqOftk0zMTgcNlslsRTnu0V1ycmte8MijatEQdKWlgAD/55DA20KQ5OEvhLEspTFT0ljocL7SvPTLrYCsELn9k/hsZn0G00UARhFxpmMPi7aZmgv4mDNDEUYGhMjje+vFII6Ec6l0tUv5lIZJJFPVA5+IrqlPtA24Rq8tnQhCKXlQnkxVkWC6u6vJLnyobk9QTt2mOt8vYV3uKsnIcZpN3BNTFZpwJcO3qd6hKw/nfV+60xqf87/o48hpndaHTHirZi5w67iUTpc0bPnz+8hDogBcVlrfAn39RrTbFFT6VoT852XzfIEzGbCiqsLrFkQ1+j9jBsEVEaKKBbqb6iNFXCZEKxqkiI2H6UmMGsfp4JPNTTOgYidytbFEDkpWrcL3U7KpwUrihiqlhZFfUu082DTrW2PJsXJz/at2ovqw8Uywo7/G4ii4vYVgtnTBL7JrqdpFBDlS+K2Io6FnulKVovBSeZ5PjRP/vK+zJU9JxZlNc3rD7t/x7jJyRSsLxz6Hhm/kHfEvcElXGge98t3tytytPepFAcV0XIyC+tGADW9CarDFpwR3jYG61LEWThgWJxoNt8f02l5n+AFVxq50NBsDM8pFwoHcH9ywx+/rDLShRSWdobNxPTICBrnTsMAW0P9FGlqJhnpAsloY1XIypB8GbOrBrWRoLgBPxY9mL+5i4tOMG2uIILvyhHsEtRJ9ouWb8xCyvGW0EwJb4ScRQt1uuP/6FvujIWxr0QlaaYnFLyBDGcjZ7KQ5DmwAv7yap6UYAmvTv707/U5sOEHe8I1IPsL07m9k3uuiOMSd1fgV20m/Fy4rclZIQBYHbpbVlorEhm35XEO/S1iQZwIifeHGxAG4OFS52xyWEQx4AN3V5gzlh58bt1EPgfvjqnffw3Tqoer2RIzCB1ESJ7ILRPm14OQiUHdFWupyfdklZeQ18nMUB9BUfbgqdLnyI1mblsP/eWKBtUer9KDXpiWenANGcIBADKiIVbJz0vXP8EvzFH2vT48qjwGGigTqLmO7ftypoQ6OhQUPgxBliut/JKcTcM8D9S7aK3devKWN8+WtDaXL4mGKt2jLSHtsVAdnKB2f6fU9yXuEh0K5t0OSxmlbVhzGDvPoxHE07PwKXHhwW4mH4tFzbeO6zMgksOU2Lz3yS5NyXFI0FBaeCz/me3tth/SK4Yix5O0f92m7nOURVyyikXcryLltZXbrxdTWJaH2rM7Hum4ApOxHPiT/IhW90Xpp+KwMwATn04hiYU8QSIIVDru91aSSQJGafYcgmmP/GrHg9azH3rbNXngF+ajIunayg+8daf1dXFwLEkMGLHjv0eA1udlLjLoRg3lkmb+O6jVz9ofXEr20kZMiGBdFLaXCIFLto+oRKKqFkO+PYVrff4sx2HZgR27R/VzpKcJoRYCYbX6MooIQlaNGn4g08M7hDLPEFHIji0q3CUR3u6JxF6u9erOKrBjUeffcETWEYEEBe8WhKrUrl9NKQZnOOs2Ew5C7lhFe6f7zvMNGAZidDPxTlqotKisQfHjbWWxWJ3NL8lX4hdJu9D2QBU/aeJlkHY0Re0aFkfySJ+fw1Uf7lS1/uhuxlW4AYU43qI0Ei4IOMmkb8CXoGBevABlDpfmUqQFsU16L+z0a3q/7ckRCbMRvh4RfNCYOdWc5mHz/Ihbq3W50ZoSbUR4bqb1NoDhDnkkprbXwZrOb68GsicHRJbL9Nkygr3/OKlBKBNi9cL4gf5CBxvaVe6fmrp5mEh65h6NRXS/KbZBWnPJpWV1xv+1fCDDgpxAbtyPl1KAFTEkBSheAAAAAAAAAA==",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W1",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "commitment_digest": "253da748d8f8958ccb05231ff09fa752b7e14eb49cbbc146f81599e9342dca47",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "HAETAE-mode2",
+        "signature": "gQCGLAVEQCQBAhDED4XgAoBICASBEYUAKggAjCCSBEJx4l+6LTabhy7+VN/oUN6T9VYyEvU47TvJALLA/XAtVdKq8T3pgZziXcCnQwr7DJXkTmNOuhHkdi3ZPlv+32vFPJedcS/cRYuX7Vm6BKFJ9CeGyKQqQS8nDeoZJf4GjjvnoFZ96TFQUL2VeDd9JvML8UIBnQGUZfvdyuTClNiMuvWiAFpM1zS/4cexOZif1dYKWV8tjMobWP2d9v7vTbcSP+cW7Mr1TeCHyj8lRAZ9YTfbSvgTq5ciqaz/K13EOPJtbDVOXYxzs4wvNf+UqYTjRj1KWgiPfjE/isPm2g/n0RHxTbcYV03dzHMj63dsNfZkS3HB2x8GMSCZqPb2lmF9ap5DY3t/1taA/EXFflSHKjRqv4AllD3wPHVbbzWqTeMULpkrrY/V+e35YVs/+XYNulb6LLct+jIaQaI/CUjiaoPkxtts7jfRcNOaasB7ag221q5cKfyg9GCIkn+FhFKc+QWKCuGFV13Xi9NdqC+trcAjA2dnADEv3cK3kHSljcQepRpR9dXJVe5CQIO7o6lc4arZZ0Qwt6whAIonWAOLsHqw73IZDnv++nw8EN+urrMshTLM/YOouDMXt8x5g5V8qtblzkBVX/fzIo1xY8yenkUzyH9L0lyqDChXHyQhmXrMJi2qT7DjpEQUps/CH0Lc41GodZJWCi7gPu/PUnok7ASqSTq+XMir8JP7RCO1eQMceVcb62GVFvCVmK7UXHwg+6e4mM5R+eGZqR6vFME+2ze+g3LH6dD1Lq0bkDi61kyeiL/7odVYX77XFFSOAAXy4qZ+StBY04G+hplLBrxROpBuGK9yW55cgHvW//Sm3g/gZuFTL8ejQZr2ON1lt+DgRfI4x4YPSF6Tnd+IhLShWlT9KFR2E4ar2Y29PFFKEJQzM1NEewZ+MmmAkxZ123WfJ5dfiujyASLY0ZBqZwUxFycnbrGvQFFHx5GWlIQG+aGnodxXfLTnEybSy0UJags4xVgCB1IhVlInV5CNHN9qz/LNZ86coFPiT1u3MWuqEzgk6pAmYo1EJlzDvvyjRLRr/pDAQG+yo1Jpzf2fsNXlYemxPvEcOklzWPX0GOm8UZ4zzR9SZzith2iW/5dk60GoXpQnqSwoCuOUuNiUMuSBSMV7CzQ7sWMUAo7NiHJ7rv1MUY75NW7/yhKT4z0yAmMGGKdqIzWIA/MFTXBs2qeRYT450nF9Ne91M6KinPeAOMcsXwDgHPhVxj6cHfWCIzcVKlGeNXB9d38+Svytkp1ovLIPBRQNqVWsi6gQ4eGCLHj9Q9WfjoJvhdAUhuTCfJ0Xx8o8zBZ+aGd+HzEB8LI455DF9j2q6n4Aqmk9oogJzCwiTPZtfWzr9yp74QLTWC95i4U9WiQB9txxYxsI8u6cpfIOu8NnMmp5dVD+EYwgy5ZYU+KrBm2sbUOfwXCU4lGhCUuC04uyB439x6elwwUnxOZC935wSNXZfrY3J4zRITIqSK09Tly7PYhqVv4hreECBphYEUTXHhyDM4SXrnm99AqV3C0ALkUHW7v5Z3VihH2uXXKiSrJwSDJ/5iFf3+rZXdQm7fc3ZC/H+oBQEJ+tzIMLAHWkddA1c6/p7bXr8uBkFnGqQmyalToFovDYkSXJKS4R1Bj/EQqKo3TFMnf+Zq0bk4RxP9w/UkYOrCwwRb78BUTFXWXnf149Hx9B0VGhp8U4oEx2+EUTeeYDMJmREluEtiqoH29Ui+Xbrg8krh/DxpwgClSN0RSbGNRZVi0H90kX0U5w1ZoK+DD8fdn7q3NBG9syAove4G8Y08KZW0gPPH3HNRl586WJTvoWw6hyk8/+ScPw/ACirl63DmVawycY5/tQdvVwkYRmiOSsWqgeb5c4tVRbH+yi9QP47W/Gl3c+G/kF+80zXnUKixQXJRdI5rCLPr3ZoGF4X3wAAAAAAA==",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    }
+  ]
+}

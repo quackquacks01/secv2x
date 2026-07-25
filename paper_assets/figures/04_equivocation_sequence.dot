@@ -1,0 +1,21 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.25", ranksep="0.35", fontname="NanumSquare", label="Equivocation 탐지 Sequence", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#555555", fontname="NanumSquare", fontsize=10, margin="0.13,0.08"];
+  edge [color="#555555", fontname="NanumSquare", fontsize=9, arrowsize=0.7];
+
+  a [label="1. 차량이 동일 Consistency Key에 대해\nRoot A인 Commitment A를 KpqC 서명"];
+  b [label="2. Witness가 서명 검증 후 Root A와 Receipt A 저장"];
+  c [label="3. 동일 차량이 같은 Key로\nRoot B인 Commitment B를 정상 서명"];
+  d [label="4. Commitment B 직접 수신 또는\n검증된 Gossip으로 도착"];
+  e [label="5. 차량 서명 검증 성공"];
+  f [shape=diamond, label="Consistency Key 동일\n그리고 Root A ≠ Root B?"];
+  g [label="6. Receipt B를 OBSERVED_CONFLICT로 서명"];
+  h [label="7. Commitment A/B + Receipt A/B를\nEvidence Bundle로 결합"];
+  i [label="8. CONFLICT 반환 및 evidence_store/JSON 저장", fillcolor="#FDEDEC"];
+  normal [label="일반 Commitment/Re-Commitment 판정으로 이동", fillcolor="#EAF2F8"];
+
+  a -> b -> c -> d -> e -> f;
+  f -> g [label="예"];
+  f -> normal [label="아니오"];
+  g -> h -> i;
+}

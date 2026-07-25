@@ -1,0 +1,10 @@
+ResultCode,판정 조건,상태 변화,의미
+ACCEPT,첫 Commitment이고 sequence=0·parent_root=None,Head·관찰·Digest 캐시 저장 및 Receipt 발행,정상 초기 계획 수락
+DUPLICATE,동일 Digest 또는 동일 Key·동일 Root가 이미 존재,새 증거 생성 없음,중복 메시지
+CONFLICT,동일 Consistency Key에 유효 서명된 서로 다른 Root 존재,충돌 Receipt와 Evidence Bundle 저장,Equivocation 탐지
+VALID_UPDATE,sequence=latest+1·parent_root 일치·context_digest 존재,최신 Head 갱신 및 Pending 해소,정상 계획 변경
+INVALID_UPDATE,초기 형식 오류·부모 Root 불일치·Context 누락·비정상 점프,캐시 갱신 없음,Re-Commitment 규칙 위반
+PENDING_UPDATE,미래 sequence이며 필요한 부모 Commitment가 아직 없음,Pending 캐시에 임시 보관,비순차 도착 대기
+STALE,유효기간 만료 또는 최신 sequence 이하,캐시 갱신 없음,오래된 Commitment
+INVALID_SIGNATURE,차량 서명 검증 실패,캐시 갱신 없음,위변조·미등록 키·잘못된 서명
+UNVERIFIED_GOSSIP,Gossip Receipt·Commitment 결합 검증 실패,캐시 갱신 없음,신뢰할 수 없는 Gossip

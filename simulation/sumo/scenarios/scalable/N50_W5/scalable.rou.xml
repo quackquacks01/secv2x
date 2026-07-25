@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+    <vType id="wtcCar" accel="2.6" decel="4.5" sigma="0" length="5.0" minGap="2.5" maxSpeed="13.89" />
+    <route id="straightRoute" edges="E0" />
+    <vehicle id="Vehicle-A" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="200.00" departSpeed="13.89" color="1,0,0" />
+    <vehicle id="Witness-W1" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="230.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Witness-W2" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="230.00" departSpeed="13.89" color="1,1,0" />
+    <vehicle id="Witness-W3" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="260.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Witness-W4" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="260.00" departSpeed="13.89" color="1,1,0" />
+    <vehicle id="Witness-W5" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="290.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Vehicle-0001" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0002" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0003" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0004" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0005" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="515.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0006" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="515.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0007" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="515.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0008" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="515.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0009" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="530.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0010" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="530.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0011" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="530.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0012" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="530.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0013" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="545.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0014" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="545.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0015" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="545.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0016" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="545.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0017" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="560.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0018" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="560.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0019" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="560.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0020" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="560.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0021" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="575.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0022" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="575.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0023" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="575.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0024" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="575.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0025" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="590.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0026" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="590.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0027" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="590.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0028" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="590.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0029" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="605.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0030" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="605.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0031" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="605.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0032" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="605.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0033" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="620.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0034" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="620.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0035" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="620.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0036" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="620.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0037" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="635.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0038" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="635.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0039" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="635.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0040" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="635.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0041" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="650.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0042" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="650.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0043" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="650.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0044" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="650.00" departSpeed="13.89" color="0.2,0.4,1" />
+</routes>

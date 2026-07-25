@@ -1,0 +1,29 @@
+﻿ D src/wtc/crypto_kpqc_haetae_attempt.py
+ M src/wtc/witness.py
+ M tests/test_protocol.py
+?? README_NEXT_STAGE_KO.md
+?? apply_minimal_sumo.py
+?? artifacts/benchmarks/
+?? artifacts/sumo/
+?? native/aimer/
+?? paper_assets/
+?? scripts/benchmark_kpqc_wtc.py
+?? scripts/build_aimer_128f.ps1
+?? simulation/
+?? src/wtc/crypto_aimer.py
+?? src/wtc/scenarios_aimer.py
+?? tests/test_crypto_aimer_real.py
+?? tests/test_experiment_config.py
+?? tests/test_gossip_conflict.py
+?? tests/test_measurement_metrics.py
+?? tests/test_network_emulator.py
+?? tests/test_network_emulator.py.bak_20260725_030422
+?? tests/test_network_emulator.py.bak_20260725_030858
+?? tests/test_protocol.py.bak_20260725_030422
+?? tests/test_protocol.py.bak_20260725_030858
+?? tests/test_protocol_aimer_real.py
+?? tests/test_sumo_minimal_files.py
+?? tests/test_sumo_wtc_helpers.py
+?? wtc_review_bundle_20260725_120146.zip
+?? wtc_review_bundle_20260725_120146/
+?? wtc_review_bundle_20260725_121607/

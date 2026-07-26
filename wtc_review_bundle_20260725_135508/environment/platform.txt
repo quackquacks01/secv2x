@@ -1,0 +1,2 @@
+﻿Windows-10-10.0.19045-SP0
+Intel64 Family 6 Model 142 Stepping 11, GenuineIntel

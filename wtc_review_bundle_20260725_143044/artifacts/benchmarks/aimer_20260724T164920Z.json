@@ -1,0 +1,100 @@
+{
+  "algorithm": "AIMer-128f",
+  "dll": "C:\\Users\\wah43\\secv2x\\native\\aimer\\libaimer-128f.dll",
+  "iterations": 100,
+  "warmup": 10,
+  "generated_at_utc": "20260724T164920Z",
+  "environment": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 11, GenuineIntel",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "C:\\Users\\wah43\\secv2x\\.venv\\Scripts\\python.exe",
+    "pid": 15064
+  },
+  "timings": {
+    "raw_keygen": {
+      "samples": 100,
+      "mean_us": 84.48,
+      "median_us": 76.0,
+      "stdev_us": 24.355987793849412,
+      "min_us": 73.4,
+      "max_us": 232.1,
+      "p95_us": 139.3
+    },
+    "raw_sign": {
+      "samples": 100,
+      "mean_us": 5411.217,
+      "median_us": 5050.6,
+      "stdev_us": 1603.1054611618883,
+      "min_us": 3522.7,
+      "max_us": 13704.6,
+      "p95_us": 7997.9
+    },
+    "raw_verify": {
+      "samples": 100,
+      "mean_us": 7288.803,
+      "median_us": 5594.05,
+      "stdev_us": 10667.808766360948,
+      "min_us": 2615.0,
+      "max_us": 102713.3,
+      "p95_us": 16497.7
+    },
+    "wtc_commitment_create": {
+      "samples": 100,
+      "mean_us": 4765.563,
+      "median_us": 4585.0,
+      "stdev_us": 1211.0444463525748,
+      "min_us": 3162.8,
+      "max_us": 9040.0,
+      "p95_us": 7493.6
+    },
+    "wtc_initial_process": {
+      "samples": 100,
+      "mean_us": 7508.576,
+      "median_us": 6909.05,
+      "stdev_us": 1398.7776695068846,
+      "min_us": 5839.8,
+      "max_us": 12304.3,
+      "p95_us": 9999.4
+    },
+    "wtc_valid_update_process": {
+      "samples": 100,
+      "mean_us": 16595.728,
+      "median_us": 15587.05,
+      "stdev_us": 4110.032539871679,
+      "min_us": 11944.6,
+      "max_us": 36005.9,
+      "p95_us": 26398.6
+    },
+    "wtc_conflict_detection": {
+      "samples": 100,
+      "mean_us": 23707.743,
+      "median_us": 23300.8,
+      "stdev_us": 3144.852772974894,
+      "min_us": 18135.4,
+      "max_us": 31019.4,
+      "p95_us": 28942.3
+    },
+    "evidence_json_serialize": {
+      "samples": 100,
+      "mean_us": 203.604,
+      "median_us": 181.05,
+      "stdev_us": 71.52868029714028,
+      "min_us": 160.8,
+      "max_us": 641.5,
+      "p95_us": 341.1
+    }
+  },
+  "sizes": {
+    "public_key_bytes": 32,
+    "secret_key_bytes": 48,
+    "raw_signature_bytes": 5888,
+    "base64_signature_chars": 7852,
+    "base64_signature_utf8_bytes": 7852,
+    "commitment_json_bytes": 8150,
+    "witness_receipt_json_bytes": 8229,
+    "evidence_bundle_json_bytes": 33160,
+    "trajectory_envelope_count": 4,
+    "raw_message_bytes": 256
+  }
+}

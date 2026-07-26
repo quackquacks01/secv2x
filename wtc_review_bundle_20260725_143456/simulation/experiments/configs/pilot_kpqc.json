@@ -1,0 +1,49 @@
+{
+  "description": "Small real-KpqC pilot. Run after the Mock pilot passes.",
+  "sumo_config": "simulation/sumo/scenarios/minimal/minimal.sumocfg",
+  "scenarios": [
+    "equivocation"
+  ],
+  "algorithms": [
+    "haetae",
+    "aimer"
+  ],
+  "vehicle_counts": [
+    3
+  ],
+  "witness_counts": [
+    2
+  ],
+  "delay_ms": [
+    0,
+    50
+  ],
+  "jitter_ms": [
+    0
+  ],
+  "loss_rates": [
+    0.0
+  ],
+  "duplicate_rates": [
+    0.0
+  ],
+  "reorder_rates": [
+    0.0
+  ],
+  "gossip_ms": [
+    50
+  ],
+  "slot_counts": [
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "steps": 20,
+  "slot_ms": 200,
+  "allow_no_conflict": false,
+  "haetae_dll": "native/haetae/libhaetae-mode2.dll",
+  "aimer_dll": "native/aimer/libaimer-128f.dll"
+}

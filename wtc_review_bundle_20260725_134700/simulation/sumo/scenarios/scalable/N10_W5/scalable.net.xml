@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-07-25T13:42:44.967584+09:00 by Eclipse SUMO netconvert 1.27.1
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="C:\Users\wah43\secv2x\simulation\sumo\scenarios\scalable\N10_W5\scalable.nod.xml"/>
+        <edge-files value="C:\Users\wah43\secv2x\simulation\sumo\scenarios\scalable\N10_W5\scalable.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\wah43\secv2x\simulation\sumo\scenarios\scalable\N10_W5\scalable.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,2000.00,0.00" origBoundary="0.00,0.00,2000.00,0.00" projParameter="!"/>
+
+    <edge id="E0" from="N0" to="N1" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="2000.00" shape="0.00,-11.20 2000.00,-11.20"/>
+        <lane id="E0_1" index="1" speed="13.89" length="2000.00" shape="0.00,-8.00 2000.00,-8.00"/>
+        <lane id="E0_2" index="2" speed="13.89" length="2000.00" shape="0.00,-4.80 2000.00,-4.80"/>
+        <lane id="E0_3" index="3" speed="13.89" length="2000.00" shape="0.00,-1.60 2000.00,-1.60"/>
+    </edge>
+
+    <junction id="N0" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-12.80"/>
+    <junction id="N1" type="dead_end" x="2000.00" y="0.00" incLanes="E0_0 E0_1 E0_2 E0_3" intLanes="" shape="2000.00,-12.80 2000.00,0.00"/>
+
+</net>

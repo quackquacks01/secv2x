@@ -1,0 +1,23 @@
+{
+  "description": "Small real KpqC pilot for Baseline A/B/Proposed session cost comparison. Not final paper statistics.",
+  "algorithms": [
+    "haetae",
+    "aimer"
+  ],
+  "slot_counts": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "witness_counts": [
+    1,
+    3,
+    5
+  ],
+  "slot_ms": 200,
+  "warmups": 1,
+  "repetitions": 3,
+  "haetae_dll": "native/haetae/libhaetae-mode2.dll",
+  "aimer_dll": "native/aimer/libaimer-128f.dll"
+}

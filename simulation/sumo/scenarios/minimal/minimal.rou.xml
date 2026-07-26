@@ -5,9 +5,10 @@
            decel="4.5"
            sigma="0"
            length="5.0"
+           width="1.8"
            minGap="2.5"
            maxSpeed="13.89"
-           color="0,0,1"/>
+           guiShape="passenger"/>
 
     <route id="straightRoute" edges="E0"/>
 

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "haetae",
+    "signer_setup_ms": 10.6096,
+    "generated_subject_keypairs": 1,
+    "generated_witness_keypairs": 5
+  },
+  {
+    "algorithm": "aimer",
+    "signer_setup_ms": 3.6062,
+    "generated_subject_keypairs": 1,
+    "generated_witness_keypairs": 5
+  }
+]

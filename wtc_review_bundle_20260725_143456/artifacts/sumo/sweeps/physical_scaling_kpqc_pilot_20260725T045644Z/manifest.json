@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-07-25T04:57:38.344234+00:00",
+  "config": "C:\\Users\\wah43\\secv2x\\simulation\\experiments\\configs\\physical_scaling_kpqc_pilot.json",
+  "case_count": 32,
+  "completed_count": 32,
+  "failure_count": 0,
+  "generate_physical_scenarios": true,
+  "require_physical_vehicles": true,
+  "raw_json": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\physical_scaling_kpqc_pilot_20260725T045644Z\\raw_results.json",
+  "raw_csv": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\physical_scaling_kpqc_pilot_20260725T045644Z\\raw_results.csv",
+  "summary_json": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\physical_scaling_kpqc_pilot_20260725T045644Z\\summary.json",
+  "summary_csv": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\physical_scaling_kpqc_pilot_20260725T045644Z\\summary.csv"
+}

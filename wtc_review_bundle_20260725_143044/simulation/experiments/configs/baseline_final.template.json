@@ -1,0 +1,23 @@
+{
+  "description": "Final-paper template. Reduce the matrix after the KpqC pilot if runtime is excessive and document the final settings.",
+  "algorithms": [
+    "haetae",
+    "aimer"
+  ],
+  "slot_counts": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "witness_counts": [
+    1,
+    3,
+    5
+  ],
+  "slot_ms": 200,
+  "warmups": 100,
+  "repetitions": 1000,
+  "haetae_dll": "native/haetae/libhaetae-mode2.dll",
+  "aimer_dll": "native/aimer/libaimer-128f.dll"
+}

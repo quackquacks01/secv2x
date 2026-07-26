@@ -1,0 +1,5550 @@
+[
+  {
+    "run_id": "20260725T024914_425991Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:16.139003+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.039,
+    "total_wall_ms": 63.9284,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024914_425991Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00001.json"
+  },
+  {
+    "run_id": "20260725T024917_131042Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:18.761483+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.026,
+    "total_wall_ms": 18.2312,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024917_131042Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00002.json"
+  },
+  {
+    "run_id": "20260725T024920_225887Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:21.795695+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0223,
+    "total_wall_ms": 13.3241,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024920_225887Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00003.json"
+  },
+  {
+    "run_id": "20260725T024923_048616Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:25.025082+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0254,
+    "total_wall_ms": 16.8932,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024923_048616Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00004.json"
+  },
+  {
+    "run_id": "20260725T024926_074075Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:28.101083+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0102,
+    "total_wall_ms": 4.8515,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 1,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "dropped": 1,
+      "delivered": 1
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "dropped",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024926_074075Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00005.json"
+  },
+  {
+    "run_id": "20260725T024928_806136Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:30.212965+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0159,
+    "total_wall_ms": 10.8036,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024928_806136Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00006.json"
+  },
+  {
+    "run_id": "20260725T024931_033965Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:32.627265+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0205,
+    "total_wall_ms": 12.5062,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024931_033965Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00007.json"
+  },
+  {
+    "run_id": "20260725T024933_596318Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:35.229709+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0203,
+    "total_wall_ms": 11.7305,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024933_596318Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00008.json"
+  },
+  {
+    "run_id": "20260725T024936_183807Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:37.790432+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0195,
+    "total_wall_ms": 10.8542,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024936_183807Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00009.json"
+  },
+  {
+    "run_id": "20260725T024938_692608Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:40.230471+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0182,
+    "total_wall_ms": 11.8605,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024938_692608Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00010.json"
+  },
+  {
+    "run_id": "20260725T024941_019709Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:42.588862+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0343,
+    "total_wall_ms": 11.0278,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 1,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "dropped": 1,
+      "delivered": 1
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "dropped",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024941_019709Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00011.json"
+  },
+  {
+    "run_id": "20260725T024943_546220Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:45.155644+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 3,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0196,
+    "total_wall_ms": 12.0662,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 0,
+      "accepted": 0,
+      "elapsed_ms": 0.0,
+      "throughput_commitments_per_sec": null,
+      "peak_memory_kib": 0.0
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024943_546220Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00012.json"
+  },
+  {
+    "run_id": "20260725T024946_078794Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:47.698075+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0187,
+    "total_wall_ms": 59.4803,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 47.142,
+      "throughput_commitments_per_sec": 148.48754825845316,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024946_078794Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00013.json"
+  },
+  {
+    "run_id": "20260725T024948_487562Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:50.040153+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0198,
+    "total_wall_ms": 51.7681,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 40.9043,
+      "throughput_commitments_per_sec": 171.13115247052266,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024948_487562Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00014.json"
+  },
+  {
+    "run_id": "20260725T024951_081693Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:52.680891+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0273,
+    "total_wall_ms": 57.0452,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 43.1666,
+      "throughput_commitments_per_sec": 162.16241260604264,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024951_081693Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00015.json"
+  },
+  {
+    "run_id": "20260725T024953_452822Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:49:55.062777+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0209,
+    "total_wall_ms": 59.3456,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 42.7987,
+      "throughput_commitments_per_sec": 163.5563697028181,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024953_452822Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00016.json"
+  },
+  {
+    "run_id": "20260725T024955_944493Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:49:57.318828+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0211,
+    "total_wall_ms": 47.7004,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 1,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "dropped": 1,
+      "delivered": 1
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "dropped",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 37.7693,
+      "throughput_commitments_per_sec": 185.33570916061458,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024955_944493Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00017.json"
+  },
+  {
+    "run_id": "20260725T024958_099318Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:49:59.743580+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0279,
+    "total_wall_ms": 56.0966,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 50,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 0,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2051,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2051,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 42.4134,
+      "throughput_commitments_per_sec": 165.04218006573393,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T024958_099318Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00018.json"
+  },
+  {
+    "run_id": "20260725T025000_456404Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:50:02.026299+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0787,
+    "total_wall_ms": 54.5998,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 41.9534,
+      "throughput_commitments_per_sec": 166.85179270333273,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025000_456404Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00019.json"
+  },
+  {
+    "run_id": "20260725T025002_957620Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:50:04.575257+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0198,
+    "total_wall_ms": 50.871,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 39.5581,
+      "throughput_commitments_per_sec": 176.95490936116747,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025002_957620Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00020.json"
+  },
+  {
+    "run_id": "20260725T025005_496907Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:50:06.962787+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.0,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0215,
+    "total_wall_ms": 51.7856,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.0,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 40.6548,
+      "throughput_commitments_per_sec": 172.18139063530012,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025005_496907Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00021.json"
+  },
+  {
+    "run_id": "20260725T025007_696417Z_equivocation_mock_seed1",
+    "created_at_utc": "2026-07-25T02:50:09.195142+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 1,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0236,
+    "total_wall_ms": 51.6173,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 40.0991,
+      "throughput_commitments_per_sec": 174.56750899646127,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025007_696417Z_equivocation_mock_seed1.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00022.json"
+  },
+  {
+    "run_id": "20260725T025010_033109Z_equivocation_mock_seed2",
+    "created_at_utc": "2026-07-25T02:50:11.635540+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 2,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.02,
+    "total_wall_ms": 52.0018,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 1,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "dropped": 1,
+      "delivered": 1
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "dropped",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 41.8832,
+      "throughput_commitments_per_sec": 167.13145127401916,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025010_033109Z_equivocation_mock_seed2.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00023.json"
+  },
+  {
+    "run_id": "20260725T025012_557290Z_equivocation_mock_seed3",
+    "created_at_utc": "2026-07-25T02:50:14.154226+00:00",
+    "scenario": "equivocation",
+    "algorithm": "mock",
+    "seed": 3,
+    "sumo_config": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\minimal\\minimal.sumocfg",
+    "state": {
+      "vehicle_id": "Vehicle-A",
+      "simulation_time_ms": 2000,
+      "x_m": 23.674999999999994,
+      "y_m": -4.8,
+      "lane_position_m": 23.674999999999994,
+      "speed_mps": 13.89,
+      "acceleration_mps2": 0.0,
+      "lane_id": "E0_0",
+      "road_id": "E0"
+    },
+    "observed_sumo_vehicle_ids": [
+      "Vehicle-A",
+      "Witness-W1",
+      "Witness-W2"
+    ],
+    "observed_sumo_vehicle_count": 3,
+    "requested_vehicle_count": 10,
+    "vehicle_count_mode": "three physical SUMO vehicles plus logical protocol background load",
+    "witness_count": 2,
+    "slot_count": 5,
+    "slot_ms": 200,
+    "delay_ms": 50,
+    "jitter_ms": 0,
+    "loss_rate": 0.05,
+    "duplicate_rate": 0.0,
+    "reorder_rate": 0.0,
+    "gossip_period_ms": 50,
+    "trajectory_envelopes": [
+      {
+        "segment_index": 0,
+        "t_start_ms": 2000,
+        "t_end_ms": 2200,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 22675,
+        "pos_max_mm": 27453,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 1,
+        "t_start_ms": 2200,
+        "t_end_ms": 2400,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 25453,
+        "pos_max_mm": 30231,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 2,
+        "t_start_ms": 2400,
+        "t_end_ms": 2600,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 28231,
+        "pos_max_mm": 33009,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 3,
+        "t_start_ms": 2600,
+        "t_end_ms": 2800,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 31009,
+        "pos_max_mm": 35787,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      },
+      {
+        "segment_index": 4,
+        "t_start_ms": 2800,
+        "t_end_ms": 3000,
+        "road_id": "E0",
+        "lane_id": "E0_0",
+        "pos_min_mm": 33787,
+        "pos_max_mm": 38565,
+        "v_min_mmps": 12890,
+        "v_max_mmps": 14890,
+        "a_min_mmps2": -500,
+        "a_max_mmps2": 500,
+        "behavior_code": "LANE_KEEP"
+      }
+    ],
+    "signer_setup_ms": 0.0187,
+    "total_wall_ms": 51.6667,
+    "initial_root": "fb6887fae0b20ff2ce053832fba3ac28a902b707ab1a7e44c30841efc016fed1",
+    "attack_root_a": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+    "attack_root_b": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+    "roots_are_different": true,
+    "group_a_receivers": [
+      "Witness-W1"
+    ],
+    "group_b_receivers": [
+      "Witness-W2"
+    ],
+    "initial_delivery_codes": [
+      "ACCEPT",
+      "ACCEPT"
+    ],
+    "attack_delivery_codes": [
+      "VALID_UPDATE",
+      "VALID_UPDATE"
+    ],
+    "accepted_update_count": 2,
+    "observable_attack": true,
+    "conflict_detected": true,
+    "evidence_generated": true,
+    "evidence_count": 2,
+    "detection_e2e_ms": 150,
+    "detection_logic_ms": 0,
+    "gossip_events": {
+      "sent": 2,
+      "delivered": 2
+    },
+    "gossip_event_log": [
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "sent",
+        "timestamp_ms": 2151,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": null,
+        "details": {
+          "base_delay_ms": 50,
+          "jitter_ms": 0,
+          "loss_rate": 0.05,
+          "duplicate_rate": 0.0,
+          "reorder_rate": 0.0
+        }
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W1",
+        "receiver_id": "Witness-W2",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "978b8e5ecb2118b5331d94b0e5b98880bcdade82e0b57581ce6154263c336460",
+        "merkle_root": "906f2ba189b5dcac8aa5e6a6d97809e07f08c4bfd1d9b9bb9286aa2f88aa0ef4",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      },
+      {
+        "event_type": "delivered",
+        "timestamp_ms": 2201,
+        "sender_id": "Witness-W2",
+        "receiver_id": "Witness-W1",
+        "consistency_key": [
+          "Vehicle-A",
+          "SUMO-MERGE-001",
+          1,
+          1
+        ],
+        "commitment_digest": "5cc819c8abda6ed8e832eeb7e5a592320a61554899e937e788eb1de4f49e8bdd",
+        "merkle_root": "d30508fafecc823706552f987061b2acd365b406058ba51e1fb226de1b4a43fb",
+        "decision": "ACCEPTED",
+        "deliver_at_ms": 2201,
+        "details": {}
+      }
+    ],
+    "background_load": {
+      "background_commitments": 7,
+      "accepted": 7,
+      "elapsed_ms": 41.0466,
+      "throughput_commitments_per_sec": 170.5378764623623,
+      "peak_memory_kib": 20.7626953125
+    },
+    "evidence_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\evidence\\evidence_20260725T025012_557290Z_equivocation_mock_seed3.json",
+    "status": "PASS",
+    "_result_file": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\sweeps\\pilot_20260725T024913Z\\runs\\run_00024.json"
+  }
+]

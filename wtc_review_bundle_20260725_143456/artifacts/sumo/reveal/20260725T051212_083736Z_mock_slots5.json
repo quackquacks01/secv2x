@@ -1,0 +1,7 @@
+{
+  "status": "ERROR",
+  "algorithm": "mock",
+  "error_type": "AttributeError",
+  "error": "'tuple' object has no attribute 'lane_id'",
+  "output_json": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\reveal\\20260725T051212_083736Z_mock_slots5.json"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="capture.net.xml"/>
+        <route-files value="capture.rou.xml"/>
+        <additional-files value="capture.add.xml"/>
+        <gui-settings-file value="capture.view.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="300"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="false"/>
+        <no-step-log value="true"/>
+    </report>
+</configuration>

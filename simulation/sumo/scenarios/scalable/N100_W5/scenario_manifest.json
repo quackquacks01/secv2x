@@ -1,0 +1,818 @@
+{
+  "vehicle_count": 100,
+  "witness_count": 5,
+  "lane_count": 4,
+  "road_length_m": 2000.0,
+  "witness_spacing_m": 30.0,
+  "background_spacing_m_requested": 30.0,
+  "background_spacing_m": 30.0,
+  "minimum_safe_background_spacing_m": 30.0,
+  "speed_mps": 13.89,
+  "network_built": true,
+  "config_file": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\scalable\\N100_W5\\scalable.sumocfg",
+  "network_file": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\scalable\\N100_W5\\scalable.net.xml",
+  "route_file": "C:\\Users\\wah43\\secv2x\\simulation\\sumo\\scenarios\\scalable\\N100_W5\\scalable.rou.xml",
+  "vehicles": [
+    {
+      "vehicle_id": "Vehicle-A",
+      "lane_index": 0,
+      "depart_position_m": 200.0,
+      "depart_speed_mps": 13.89,
+      "role": "SUBJECT",
+      "color": "1,0,0"
+    },
+    {
+      "vehicle_id": "Witness-W1",
+      "lane_index": 0,
+      "depart_position_m": 230.0,
+      "depart_speed_mps": 13.89,
+      "role": "WITNESS",
+      "color": "0,1,0"
+    },
+    {
+      "vehicle_id": "Witness-W2",
+      "lane_index": 1,
+      "depart_position_m": 230.0,
+      "depart_speed_mps": 13.89,
+      "role": "WITNESS",
+      "color": "1,1,0"
+    },
+    {
+      "vehicle_id": "Witness-W3",
+      "lane_index": 0,
+      "depart_position_m": 260.0,
+      "depart_speed_mps": 13.89,
+      "role": "WITNESS",
+      "color": "0,1,0"
+    },
+    {
+      "vehicle_id": "Witness-W4",
+      "lane_index": 1,
+      "depart_position_m": 260.0,
+      "depart_speed_mps": 13.89,
+      "role": "WITNESS",
+      "color": "1,1,0"
+    },
+    {
+      "vehicle_id": "Witness-W5",
+      "lane_index": 0,
+      "depart_position_m": 290.0,
+      "depart_speed_mps": 13.89,
+      "role": "WITNESS",
+      "color": "0,1,0"
+    },
+    {
+      "vehicle_id": "Vehicle-0001",
+      "lane_index": 0,
+      "depart_position_m": 500.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0002",
+      "lane_index": 1,
+      "depart_position_m": 500.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0003",
+      "lane_index": 2,
+      "depart_position_m": 500.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0004",
+      "lane_index": 3,
+      "depart_position_m": 500.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0005",
+      "lane_index": 0,
+      "depart_position_m": 530.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0006",
+      "lane_index": 1,
+      "depart_position_m": 530.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0007",
+      "lane_index": 2,
+      "depart_position_m": 530.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0008",
+      "lane_index": 3,
+      "depart_position_m": 530.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0009",
+      "lane_index": 0,
+      "depart_position_m": 560.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0010",
+      "lane_index": 1,
+      "depart_position_m": 560.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0011",
+      "lane_index": 2,
+      "depart_position_m": 560.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0012",
+      "lane_index": 3,
+      "depart_position_m": 560.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0013",
+      "lane_index": 0,
+      "depart_position_m": 590.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0014",
+      "lane_index": 1,
+      "depart_position_m": 590.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0015",
+      "lane_index": 2,
+      "depart_position_m": 590.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0016",
+      "lane_index": 3,
+      "depart_position_m": 590.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0017",
+      "lane_index": 0,
+      "depart_position_m": 620.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0018",
+      "lane_index": 1,
+      "depart_position_m": 620.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0019",
+      "lane_index": 2,
+      "depart_position_m": 620.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0020",
+      "lane_index": 3,
+      "depart_position_m": 620.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0021",
+      "lane_index": 0,
+      "depart_position_m": 650.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0022",
+      "lane_index": 1,
+      "depart_position_m": 650.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0023",
+      "lane_index": 2,
+      "depart_position_m": 650.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0024",
+      "lane_index": 3,
+      "depart_position_m": 650.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0025",
+      "lane_index": 0,
+      "depart_position_m": 680.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0026",
+      "lane_index": 1,
+      "depart_position_m": 680.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0027",
+      "lane_index": 2,
+      "depart_position_m": 680.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0028",
+      "lane_index": 3,
+      "depart_position_m": 680.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0029",
+      "lane_index": 0,
+      "depart_position_m": 710.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0030",
+      "lane_index": 1,
+      "depart_position_m": 710.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0031",
+      "lane_index": 2,
+      "depart_position_m": 710.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0032",
+      "lane_index": 3,
+      "depart_position_m": 710.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0033",
+      "lane_index": 0,
+      "depart_position_m": 740.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0034",
+      "lane_index": 1,
+      "depart_position_m": 740.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0035",
+      "lane_index": 2,
+      "depart_position_m": 740.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0036",
+      "lane_index": 3,
+      "depart_position_m": 740.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0037",
+      "lane_index": 0,
+      "depart_position_m": 770.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0038",
+      "lane_index": 1,
+      "depart_position_m": 770.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0039",
+      "lane_index": 2,
+      "depart_position_m": 770.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0040",
+      "lane_index": 3,
+      "depart_position_m": 770.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0041",
+      "lane_index": 0,
+      "depart_position_m": 800.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0042",
+      "lane_index": 1,
+      "depart_position_m": 800.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0043",
+      "lane_index": 2,
+      "depart_position_m": 800.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0044",
+      "lane_index": 3,
+      "depart_position_m": 800.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0045",
+      "lane_index": 0,
+      "depart_position_m": 830.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0046",
+      "lane_index": 1,
+      "depart_position_m": 830.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0047",
+      "lane_index": 2,
+      "depart_position_m": 830.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0048",
+      "lane_index": 3,
+      "depart_position_m": 830.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0049",
+      "lane_index": 0,
+      "depart_position_m": 860.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0050",
+      "lane_index": 1,
+      "depart_position_m": 860.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0051",
+      "lane_index": 2,
+      "depart_position_m": 860.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0052",
+      "lane_index": 3,
+      "depart_position_m": 860.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0053",
+      "lane_index": 0,
+      "depart_position_m": 890.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0054",
+      "lane_index": 1,
+      "depart_position_m": 890.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0055",
+      "lane_index": 2,
+      "depart_position_m": 890.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0056",
+      "lane_index": 3,
+      "depart_position_m": 890.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0057",
+      "lane_index": 0,
+      "depart_position_m": 920.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0058",
+      "lane_index": 1,
+      "depart_position_m": 920.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0059",
+      "lane_index": 2,
+      "depart_position_m": 920.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0060",
+      "lane_index": 3,
+      "depart_position_m": 920.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0061",
+      "lane_index": 0,
+      "depart_position_m": 950.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0062",
+      "lane_index": 1,
+      "depart_position_m": 950.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0063",
+      "lane_index": 2,
+      "depart_position_m": 950.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0064",
+      "lane_index": 3,
+      "depart_position_m": 950.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0065",
+      "lane_index": 0,
+      "depart_position_m": 980.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0066",
+      "lane_index": 1,
+      "depart_position_m": 980.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0067",
+      "lane_index": 2,
+      "depart_position_m": 980.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0068",
+      "lane_index": 3,
+      "depart_position_m": 980.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0069",
+      "lane_index": 0,
+      "depart_position_m": 1010.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0070",
+      "lane_index": 1,
+      "depart_position_m": 1010.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0071",
+      "lane_index": 2,
+      "depart_position_m": 1010.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0072",
+      "lane_index": 3,
+      "depart_position_m": 1010.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0073",
+      "lane_index": 0,
+      "depart_position_m": 1040.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0074",
+      "lane_index": 1,
+      "depart_position_m": 1040.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0075",
+      "lane_index": 2,
+      "depart_position_m": 1040.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0076",
+      "lane_index": 3,
+      "depart_position_m": 1040.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0077",
+      "lane_index": 0,
+      "depart_position_m": 1070.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0078",
+      "lane_index": 1,
+      "depart_position_m": 1070.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0079",
+      "lane_index": 2,
+      "depart_position_m": 1070.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0080",
+      "lane_index": 3,
+      "depart_position_m": 1070.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0081",
+      "lane_index": 0,
+      "depart_position_m": 1100.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0082",
+      "lane_index": 1,
+      "depart_position_m": 1100.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0083",
+      "lane_index": 2,
+      "depart_position_m": 1100.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0084",
+      "lane_index": 3,
+      "depart_position_m": 1100.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0085",
+      "lane_index": 0,
+      "depart_position_m": 1130.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0086",
+      "lane_index": 1,
+      "depart_position_m": 1130.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0087",
+      "lane_index": 2,
+      "depart_position_m": 1130.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0088",
+      "lane_index": 3,
+      "depart_position_m": 1130.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0089",
+      "lane_index": 0,
+      "depart_position_m": 1160.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0090",
+      "lane_index": 1,
+      "depart_position_m": 1160.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0091",
+      "lane_index": 2,
+      "depart_position_m": 1160.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0092",
+      "lane_index": 3,
+      "depart_position_m": 1160.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0093",
+      "lane_index": 0,
+      "depart_position_m": 1190.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    },
+    {
+      "vehicle_id": "Vehicle-0094",
+      "lane_index": 1,
+      "depart_position_m": 1190.0,
+      "depart_speed_mps": 13.89,
+      "role": "BACKGROUND",
+      "color": "0.2,0.4,1"
+    }
+  ],
+  "interpretation": "All listed vehicles are explicit physical SUMO vehicles. Only Vehicle-A is the attacking Subject; Witness-W* vehicles participate in WTC observation and Gossip."
+}

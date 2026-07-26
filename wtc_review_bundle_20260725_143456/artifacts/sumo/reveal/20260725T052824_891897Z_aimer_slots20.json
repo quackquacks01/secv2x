@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "algorithm": "aimer",
+  "subject_state": {
+    "vehicle_id": "Vehicle-A",
+    "simulation_time_ms": 100,
+    "x_m": 0.0,
+    "y_m": -4.8,
+    "lane_position_m": 0.0,
+    "speed_mps": 10.0,
+    "acceleration_mps2": 0.0,
+    "lane_id": "E0_0",
+    "road_id": "E0",
+    "route_edges": [
+      "E0"
+    ],
+    "route_index": 0
+  },
+  "slot_count": 20,
+  "slot_ms": 200,
+  "commitment_signature_valid": true,
+  "witness_result": "ACCEPT",
+  "witness_receipt_decision": "ACCEPTED",
+  "commitment_bytes": 8145,
+  "total_disclosure_bytes": 19817,
+  "mean_disclosure_bytes": 990.85,
+  "total_proof_items": 100,
+  "all_disclosures_valid": true,
+  "tampered_disclosure_rejected": true,
+  "signer_setup_ms": 3.8154,
+  "commitment_create_wall_ms": 5.4532,
+  "commitment_verify_wall_ms": 2.565,
+  "proof_generation_total_wall_ms": 25.0598,
+  "proof_verification_total_wall_ms": 2.2519999999999993,
+  "disclosures": [
+    {
+      "slot_index": 0,
+      "valid": true,
+      "bytes": 989,
+      "proof_items": 5,
+      "generation_wall_ms": 0.8131,
+      "verification_wall_ms": 0.0882
+    },
+    {
+      "slot_index": 1,
+      "valid": true,
+      "bytes": 987,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7618,
+      "verification_wall_ms": 0.0769
+    },
+    {
+      "slot_index": 2,
+      "valid": true,
+      "bytes": 987,
+      "proof_items": 5,
+      "generation_wall_ms": 0.9283,
+      "verification_wall_ms": 0.2069
+    },
+    {
+      "slot_index": 3,
+      "valid": true,
+      "bytes": 986,
+      "proof_items": 5,
+      "generation_wall_ms": 2.6598,
+      "verification_wall_ms": 0.2084
+    },
+    {
+      "slot_index": 4,
+      "valid": true,
+      "bytes": 989,
+      "proof_items": 5,
+      "generation_wall_ms": 1.9957,
+      "verification_wall_ms": 0.1605
+    },
+    {
+      "slot_index": 5,
+      "valid": true,
+      "bytes": 990,
+      "proof_items": 5,
+      "generation_wall_ms": 2.0744,
+      "verification_wall_ms": 0.1644
+    },
+    {
+      "slot_index": 6,
+      "valid": true,
+      "bytes": 991,
+      "proof_items": 5,
+      "generation_wall_ms": 2.0421,
+      "verification_wall_ms": 0.1624
+    },
+    {
+      "slot_index": 7,
+      "valid": true,
+      "bytes": 990,
+      "proof_items": 5,
+      "generation_wall_ms": 2.131,
+      "verification_wall_ms": 0.1691
+    },
+    {
+      "slot_index": 8,
+      "valid": true,
+      "bytes": 992,
+      "proof_items": 5,
+      "generation_wall_ms": 0.8165,
+      "verification_wall_ms": 0.0802
+    },
+    {
+      "slot_index": 9,
+      "valid": true,
+      "bytes": 991,
+      "proof_items": 5,
+      "generation_wall_ms": 0.745,
+      "verification_wall_ms": 0.0665
+    },
+    {
+      "slot_index": 10,
+      "valid": true,
+      "bytes": 993,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7393,
+      "verification_wall_ms": 0.0655
+    },
+    {
+      "slot_index": 11,
+      "valid": true,
+      "bytes": 992,
+      "proof_items": 5,
+      "generation_wall_ms": 2.7735,
+      "verification_wall_ms": 0.1436
+    },
+    {
+      "slot_index": 12,
+      "valid": true,
+      "bytes": 993,
+      "proof_items": 5,
+      "generation_wall_ms": 1.1198,
+      "verification_wall_ms": 0.0743
+    },
+    {
+      "slot_index": 13,
+      "valid": true,
+      "bytes": 992,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7588,
+      "verification_wall_ms": 0.0676
+    },
+    {
+      "slot_index": 14,
+      "valid": true,
+      "bytes": 992,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7459,
+      "verification_wall_ms": 0.0667
+    },
+    {
+      "slot_index": 15,
+      "valid": true,
+      "bytes": 991,
+      "proof_items": 5,
+      "generation_wall_ms": 0.8691,
+      "verification_wall_ms": 0.1716
+    },
+    {
+      "slot_index": 16,
+      "valid": true,
+      "bytes": 994,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7971,
+      "verification_wall_ms": 0.0714
+    },
+    {
+      "slot_index": 17,
+      "valid": true,
+      "bytes": 993,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7629,
+      "verification_wall_ms": 0.0693
+    },
+    {
+      "slot_index": 18,
+      "valid": true,
+      "bytes": 993,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7731,
+      "verification_wall_ms": 0.0702
+    },
+    {
+      "slot_index": 19,
+      "valid": true,
+      "bytes": 992,
+      "proof_items": 5,
+      "generation_wall_ms": 0.7526,
+      "verification_wall_ms": 0.0683
+    }
+  ],
+  "total_wall_ms": 1748.5015,
+  "output_json": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\reveal\\20260725T052824_891897Z_aimer_slots20.json"
+}

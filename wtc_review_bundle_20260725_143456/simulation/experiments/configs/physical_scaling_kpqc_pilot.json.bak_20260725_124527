@@ -1,0 +1,60 @@
+{
+  "description": "Small physical SUMO integration pilot using real HAETAE and AIMer. This is not the final 30-seed experiment.",
+  "generate_physical_scenarios": true,
+  "require_physical_vehicles": true,
+  "scalable_scenario_root": "simulation/sumo/scenarios/scalable",
+  "regenerate_scenarios": false,
+  "lane_count": 4,
+  "witness_spacing_m": 30.0,
+  "background_spacing_m": 15.0,
+  "speed_mps": 13.89,
+  "scenarios": [
+    "equivocation"
+  ],
+  "algorithms": [
+    "haetae",
+    "aimer"
+  ],
+  "vehicle_counts": [
+    10,
+    100
+  ],
+  "witness_counts": [
+    5
+  ],
+  "communication_ranges_m": [
+    50,
+    120
+  ],
+  "delay_ms": [
+    0,
+    50
+  ],
+  "jitter_ms": [
+    0
+  ],
+  "loss_rates": [
+    0.0
+  ],
+  "duplicate_rates": [
+    0.0
+  ],
+  "reorder_rates": [
+    0.0
+  ],
+  "gossip_ms": [
+    50
+  ],
+  "slot_counts": [
+    5
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "steps": 20,
+  "slot_ms": 200,
+  "allow_no_conflict": true,
+  "haetae_dll": "native/haetae/libhaetae-mode2.dll",
+  "aimer_dll": "native/aimer/libaimer-128f.dll"
+}

@@ -1,0 +1,48 @@
+{
+  "description": "Fast functional pilot. Uses Mock HMAC only; not for cryptographic performance claims.",
+  "sumo_config": "simulation/sumo/scenarios/minimal/minimal.sumocfg",
+  "scenarios": [
+    "equivocation"
+  ],
+  "algorithms": [
+    "mock"
+  ],
+  "vehicle_counts": [
+    3,
+    10
+  ],
+  "witness_counts": [
+    2
+  ],
+  "delay_ms": [
+    0,
+    50
+  ],
+  "jitter_ms": [
+    0
+  ],
+  "loss_rates": [
+    0.0,
+    0.05
+  ],
+  "duplicate_rates": [
+    0.0
+  ],
+  "reorder_rates": [
+    0.0
+  ],
+  "gossip_ms": [
+    50
+  ],
+  "slot_counts": [
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "steps": 20,
+  "slot_ms": 200,
+  "allow_no_conflict": true
+}

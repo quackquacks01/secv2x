@@ -1,0 +1,6 @@
+{
+  "run_id": "20260725T041930_202889Z_equivocation_mock_seed1",
+  "status": "ERROR",
+  "error_type": "RuntimeError",
+  "error": "physical SUMO vehicle requirement not met: requested=50, active=10"
+}

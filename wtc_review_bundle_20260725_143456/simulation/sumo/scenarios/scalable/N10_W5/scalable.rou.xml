@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+    <vType id="wtcCar" accel="2.6" decel="4.5" sigma="0" length="5.0" minGap="2.5" maxSpeed="13.89" />
+    <route id="straightRoute" edges="E0" />
+    <vehicle id="Vehicle-A" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="200.00" departSpeed="13.89" color="1,0,0" />
+    <vehicle id="Witness-W1" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="230.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Witness-W2" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="230.00" departSpeed="13.89" color="1,1,0" />
+    <vehicle id="Witness-W3" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="260.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Witness-W4" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="260.00" departSpeed="13.89" color="1,1,0" />
+    <vehicle id="Witness-W5" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="290.00" departSpeed="13.89" color="0,1,0" />
+    <vehicle id="Vehicle-0001" type="wtcCar" route="straightRoute" depart="0.0" departLane="0" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0002" type="wtcCar" route="straightRoute" depart="0.0" departLane="1" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0003" type="wtcCar" route="straightRoute" depart="0.0" departLane="2" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+    <vehicle id="Vehicle-0004" type="wtcCar" route="straightRoute" depart="0.0" departLane="3" departPos="500.00" departSpeed="13.89" color="0.2,0.4,1" />
+</routes>

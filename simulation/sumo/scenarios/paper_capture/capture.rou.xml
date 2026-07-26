@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="subjectType"
+           vClass="passenger"
+           accel="2.6"
+           decel="4.5"
+           sigma="0"
+           length="4.9"
+           width="1.85"
+           minGap="2.5"
+           maxSpeed="13.89"
+           guiShape="passenger/sedan"
+           color="230,45,45"/>
+
+    <vType id="witnessType"
+           vClass="passenger"
+           accel="2.6"
+           decel="4.5"
+           sigma="0"
+           length="4.6"
+           width="1.82"
+           minGap="2.5"
+           maxSpeed="13.89"
+           guiShape="passenger/hatchback"
+           color="45,110,245"/>
+
+    <vType id="backgroundType"
+           vClass="passenger"
+           accel="2.6"
+           decel="4.5"
+           sigma="0.15"
+           length="4.7"
+           width="1.80"
+           minGap="2.5"
+           maxSpeed="13.89"
+           guiShape="passenger"
+           color="145,150,160"/>
+
+    <route id="west_east" edges="W2C C2E"/>
+    <route id="east_west" edges="E2C C2W"/>
+    <route id="south_north" edges="S2C C2N"/>
+    <route id="north_south" edges="N2C C2S"/>
+
+    <!-- Core WTC vehicles: already close to the capture positions at t=0 -->
+    <vehicle id="Vehicle-A" type="subjectType" route="west_east"
+             depart="0" departLane="0" departPos="215" departSpeed="0">
+        <stop lane="W2C_0" startPos="212" endPos="220" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="Witness-W1" type="witnessType" route="west_east"
+             depart="0" departLane="1" departPos="198" departSpeed="0">
+        <stop lane="W2C_1" startPos="195" endPos="203" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="Witness-W2" type="witnessType" route="south_north"
+             depart="0" departLane="0" departPos="145" departSpeed="0">
+        <stop lane="S2C_0" startPos="142" endPos="150" duration="999" parking="true"/>
+    </vehicle>
+
+    <!-- Background traffic: balanced but deliberately sparse -->
+    <vehicle id="BG-01" type="backgroundType" route="east_west"
+             depart="0" departLane="0" departPos="215" departSpeed="0">
+        <stop lane="E2C_0" startPos="212" endPos="220" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-02" type="backgroundType" route="east_west"
+             depart="0" departLane="1" departPos="184" departSpeed="0">
+        <stop lane="E2C_1" startPos="181" endPos="189" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-03" type="backgroundType" route="north_south"
+             depart="0" departLane="0" departPos="145" departSpeed="0">
+        <stop lane="N2C_0" startPos="142" endPos="150" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-04" type="backgroundType" route="north_south"
+             depart="0" departLane="0" departPos="108" departSpeed="0">
+        <stop lane="N2C_0" startPos="105" endPos="113" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-05" type="backgroundType" route="south_north"
+             depart="0" departLane="0" departPos="105" departSpeed="0">
+        <stop lane="S2C_0" startPos="102" endPos="110" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-06" type="backgroundType" route="west_east"
+             depart="0" departLane="0" departPos="175" departSpeed="0">
+        <stop lane="W2C_0" startPos="172" endPos="180" duration="999" parking="true"/>
+    </vehicle>
+
+    <vehicle id="BG-07" type="backgroundType" route="west_east"
+             depart="0" departLane="1" departPos="158" departSpeed="0">
+        <stop lane="W2C_1" startPos="155" endPos="163" duration="999" parking="true"/>
+    </vehicle>
+</routes>

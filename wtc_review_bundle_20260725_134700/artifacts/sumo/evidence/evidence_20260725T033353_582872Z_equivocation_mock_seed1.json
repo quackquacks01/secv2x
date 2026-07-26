@@ -1,0 +1,501 @@
+{
+  "run_id": "20260725T033353_582872Z_equivocation_mock_seed1",
+  "evidence_bundles": [
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W3",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W3",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "e2726912c41f4a70a548dc000bd00b9c1b27002d38595da8a2778e47a8597d14",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W3",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "1c051778461fd3fb642dd91363adcef8aae29495dcfe02dc162c1eff14662ecf",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W4",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W4",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "f722c379a1a495b7d790deada74261067e0712e45f343bf59c04904fa807ee7a",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W4",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "b23f2f061754f2e59ca09eb2b0b1627501357d77fcbdf52535d3e67fa4988abd",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W5",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W5",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "926c5a0c4d2524f96dca2a6234d6f13c35b2948b871176dbd9d569f2e26af7e2",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W5",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "f41b428532cfaa3726bc02c609f11bc156d5288bb78071f00b9fef929b1cba56",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W1",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W1",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "c853c3dccf4978152b549b3d7965800ab3f14798d909c44c6e74bb9f81759168",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W1",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "8c72cdb96cffabbdf2cf8c347cddb19e1e6277fdc07f7f39785af9121f9fd7c2",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W2",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W2",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "4bbf9a35abd27549ebabbc8743f560eb2cd9978b1ca172fd736642e7e9e98956",
+        "decision": "ACCEPTED"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W2",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "a6ceb11b2c0ce59d2a2cbb296486daad939c06b3015c3ac9760e57f695c0c376",
+        "decision": "OBSERVED_CONFLICT"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W4",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W4",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "b23f2f061754f2e59ca09eb2b0b1627501357d77fcbdf52535d3e67fa4988abd",
+        "decision": "OBSERVED_CONFLICT"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W4",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "f722c379a1a495b7d790deada74261067e0712e45f343bf59c04904fa807ee7a",
+        "decision": "ACCEPTED"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W5",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W5",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "f41b428532cfaa3726bc02c609f11bc156d5288bb78071f00b9fef929b1cba56",
+        "decision": "OBSERVED_CONFLICT"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W5",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "926c5a0c4d2524f96dca2a6234d6f13c35b2948b871176dbd9d569f2e26af7e2",
+        "decision": "ACCEPTED"
+      }
+    },
+    {
+      "consistency_key": [
+        "Vehicle-A",
+        "SUMO-MERGE-001",
+        1,
+        1
+      ],
+      "witness_id": "Witness-W3",
+      "detected_at_ms": 2051,
+      "commitment_a": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "6bcacdc41b527e559adb5d34b538fe034144dc5aaddb5b6a3d716d678eb275cb",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "bfa9c06f7c090c81b406b7b2f404de2bd24725f5512bf2c0e63fa8a901223aaf"
+      },
+      "commitment_b": {
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "valid_from_ms": 2000,
+        "valid_until_ms": 62000,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "parent_root": "6e9c6392c0defe8cd6292ff3e49b19cd0f74df8a6fed8a21c12184a17b4433ee",
+        "context_digest": "fface532e9deaf8e4b6c013fec6d9ce0a03ad122a01ade0ae8d7bc42a8ca66dc",
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "5e5d1906810e4c78d8ef842373373c002a93296028377e7aff603de26d596526"
+      },
+      "receipt_a": {
+        "witness_id": "Witness-W3",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "b3cc27edffca37850497278ee41c50b32348a370b8d2eab3de615b7174c7a474",
+        "commitment_digest": "118a9135cfe59da1edcb3094221ab026eff48e9739625bd1060cc1dbb8ae8d0d",
+        "observed_at_ms": 2051,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "1c051778461fd3fb642dd91363adcef8aae29495dcfe02dc162c1eff14662ecf",
+        "decision": "OBSERVED_CONFLICT"
+      },
+      "receipt_b": {
+        "witness_id": "Witness-W3",
+        "subject_id": "Vehicle-A",
+        "session_id": "SUMO-MERGE-001",
+        "epoch": 1,
+        "sequence": 1,
+        "merkle_root": "cf141a7bc0ebfaef4dd97ac6c20567f0b5e046a21bedbdfa200817e43667d1e8",
+        "commitment_digest": "48e0818f65edb1718c6539ca1ef8b5679d36e79825a97725f11cba3dcc213977",
+        "observed_at_ms": 2001,
+        "signature_algorithm": "MOCK-HMAC-SHA256",
+        "signature": "e2726912c41f4a70a548dc000bd00b9c1b27002d38595da8a2778e47a8597d14",
+        "decision": "ACCEPTED"
+      }
+    }
+  ]
+}

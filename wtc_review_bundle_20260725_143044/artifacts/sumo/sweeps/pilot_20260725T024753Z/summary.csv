@@ -1,0 +1,9 @@
+﻿scenario,algorithm,requested_vehicle_count,witness_count,slot_count,delay_ms,jitter_ms,loss_rate,duplicate_rate,reorder_rate,gossip_period_ms,runs,error_runs,attack_runs,observable_attack_runs,detected_runs,detection_rate_total,detection_rate_observable,mean_detection_e2e_ms,p95_detection_e2e_ms,mean_detection_logic_ms,p95_detection_logic_ms,mean_background_throughput_per_sec,mean_background_peak_memory_kib,total_evidence_count
+equivocation,mock,10,2,5,0,0,0.0,0.0,0.0,50,3,0,3,3,3,1.0,1.0,50.0,50.0,0.0,0.0,162.48590679186026,20.7626953125,6
+equivocation,mock,10,2,5,0,0,0.05,0.0,0.0,50,3,0,3,3,3,1.0,1.0,50.0,50.0,0.0,0.0,177.6656304543519,20.7626953125,5
+equivocation,mock,10,2,5,50,0,0.0,0.0,0.0,50,3,0,3,3,3,1.0,1.0,150.0,150.0,0.0,0.0,157.38728160374578,20.7626953125,6
+equivocation,mock,10,2,5,50,0,0.05,0.0,0.0,50,3,0,3,3,3,1.0,1.0,150.0,150.0,0.0,0.0,126.65316267913131,20.7626953125,5
+equivocation,mock,3,2,5,0,0,0.0,0.0,0.0,50,3,0,3,3,3,1.0,1.0,50.0,50.0,0.0,0.0,,0.0,6
+equivocation,mock,3,2,5,0,0,0.05,0.0,0.0,50,3,0,3,3,3,1.0,1.0,50.0,50.0,0.0,0.0,,0.0,5
+equivocation,mock,3,2,5,50,0,0.0,0.0,0.0,50,3,0,3,3,3,1.0,1.0,150.0,150.0,0.0,0.0,,0.0,6
+equivocation,mock,3,2,5,50,0,0.05,0.0,0.0,50,3,0,3,3,3,1.0,1.0,150.0,150.0,0.0,0.0,,0.0,5

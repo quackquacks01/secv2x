@@ -1,0 +1,60 @@
+{
+  "description": "Physical SUMO mobility and distance-based Witness observability smoke test. Mock signer only.",
+  "generate_physical_scenarios": true,
+  "require_physical_vehicles": true,
+  "scalable_scenario_root": "simulation/sumo/scenarios/scalable",
+  "regenerate_scenarios": false,
+  "lane_count": 4,
+  "witness_spacing_m": 30.0,
+  "background_spacing_m": 15.0,
+  "speed_mps": 13.89,
+  "scenarios": [
+    "equivocation"
+  ],
+  "algorithms": [
+    "mock"
+  ],
+  "vehicle_counts": [
+    10,
+    50,
+    100
+  ],
+  "witness_counts": [
+    5
+  ],
+  "communication_ranges_m": [
+    50,
+    120
+  ],
+  "delay_ms": [
+    0,
+    50
+  ],
+  "jitter_ms": [
+    0
+  ],
+  "loss_rates": [
+    0.0,
+    0.05
+  ],
+  "duplicate_rates": [
+    0.0
+  ],
+  "reorder_rates": [
+    0.0
+  ],
+  "gossip_ms": [
+    50
+  ],
+  "slot_counts": [
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "steps": 20,
+  "slot_ms": 200,
+  "allow_no_conflict": true
+}

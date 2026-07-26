@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "algorithm": "mock",
+  "subject_state": {
+    "vehicle_id": "Vehicle-A",
+    "simulation_time_ms": 100,
+    "x_m": 0.0,
+    "y_m": -4.8,
+    "lane_position_m": 0.0,
+    "speed_mps": 10.0,
+    "acceleration_mps2": 0.0,
+    "lane_id": "E0_0",
+    "road_id": "E0",
+    "route_edges": [
+      "E0"
+    ],
+    "route_index": 0
+  },
+  "slot_count": 5,
+  "slot_ms": 200,
+  "commitment_signature_valid": true,
+  "witness_result": "ACCEPT",
+  "witness_receipt_decision": "ACCEPTED",
+  "commitment_bytes": 363,
+  "total_disclosure_bytes": 3868,
+  "mean_disclosure_bytes": 773.6,
+  "total_proof_items": 15,
+  "all_disclosures_valid": true,
+  "tampered_disclosure_rejected": true,
+  "signer_setup_ms": 0.0139,
+  "commitment_create_wall_ms": 1.1807,
+  "commitment_verify_wall_ms": 0.1215,
+  "proof_generation_total_wall_ms": 4.8394,
+  "proof_verification_total_wall_ms": 1.2896999999999998,
+  "disclosures": [
+    {
+      "slot_index": 0,
+      "valid": true,
+      "bytes": 775,
+      "proof_items": 3,
+      "generation_wall_ms": 0.9048,
+      "verification_wall_ms": 0.2372
+    },
+    {
+      "slot_index": 1,
+      "valid": true,
+      "bytes": 773,
+      "proof_items": 3,
+      "generation_wall_ms": 1.4547,
+      "verification_wall_ms": 0.1879
+    },
+    {
+      "slot_index": 2,
+      "valid": true,
+      "bytes": 773,
+      "proof_items": 3,
+      "generation_wall_ms": 1.0241,
+      "verification_wall_ms": 0.5256
+    },
+    {
+      "slot_index": 3,
+      "valid": true,
+      "bytes": 772,
+      "proof_items": 3,
+      "generation_wall_ms": 1.133,
+      "verification_wall_ms": 0.254
+    },
+    {
+      "slot_index": 4,
+      "valid": true,
+      "bytes": 775,
+      "proof_items": 3,
+      "generation_wall_ms": 0.3228,
+      "verification_wall_ms": 0.085
+    }
+  ],
+  "total_wall_ms": 1844.9223,
+  "output_json": "C:\\Users\\wah43\\secv2x\\artifacts\\sumo\\reveal\\20260725T052810_299770Z_mock_slots5.json"
+}

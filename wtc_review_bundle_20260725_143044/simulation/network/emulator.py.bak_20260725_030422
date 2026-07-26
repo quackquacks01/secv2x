@@ -1,0 +1,229 @@
+from __future__ import annotations
+
+import asyncio
+import random
+from dataclasses import dataclass, field
+from typing import Any, Awaitable, Callable, Dict, List, Optional, Tuple
+
+from src.wtc.commitment import commitment_digest_hex
+from src.wtc.models import Commitment, ResultCode, WitnessReceipt
+
+
+@dataclass(order=True)
+class ScheduledGossip:
+    deliver_at_ms: int
+    order: int
+    sender_id: str = field(compare=False)
+    receiver_id: str = field(compare=False)
+    commitment: Commitment = field(compare=False)
+    receipt: WitnessReceipt = field(compare=False)
+
+
+@dataclass(frozen=True)
+class NetworkEventLog:
+    event_type: str
+    timestamp_ms: int
+    sender_id: str
+    receiver_id: str
+    consistency_key: tuple[str, str, int, int]
+    commitment_digest: str
+    merkle_root: str
+    decision: str
+    deliver_at_ms: int | None = None
+    details: dict[str, Any] = field(default_factory=dict)
+
+
+NetworkHandler = Callable[[Commitment, WitnessReceipt], Awaitable[ResultCode]]
+
+
+class GossipNetworkEmulator:
+    def __init__(
+        self,
+        *,
+        base_delay_ms: int = 0,
+        jitter_ms: int = 0,
+        loss_rate: float = 0.0,
+        duplicate_rate: float = 0.0,
+        reorder_rate: float = 0.0,
+        seed: int | None = None,
+    ) -> None:
+        if not 0 <= loss_rate <= 1:
+            raise ValueError("loss_rate must be between 0 and 1")
+        if not 0 <= duplicate_rate <= 1:
+            raise ValueError("duplicate_rate must be between 0 and 1")
+        if not 0 <= reorder_rate <= 1:
+            raise ValueError("reorder_rate must be between 0 and 1")
+        self.base_delay_ms = base_delay_ms
+        self.jitter_ms = jitter_ms
+        self.loss_rate = loss_rate
+        self.duplicate_rate = duplicate_rate
+        self.reorder_rate = reorder_rate
+        self.random = random.Random(seed)
+        self.current_time_ms = 0
+        self._sequence = 0
+        self._queue: asyncio.PriorityQueue[ScheduledGossip] = asyncio.PriorityQueue()
+        self.handlers: Dict[str, NetworkHandler] = {}
+        self.events: List[NetworkEventLog] = []
+
+    def register_handler(self, node_id: str, handler: NetworkHandler) -> None:
+        self.handlers[node_id] = handler
+
+    def _log_event(
+        self,
+        event_type: str,
+        timestamp_ms: int,
+        sender_id: str,
+        receiver_id: str,
+        commitment: Commitment,
+        receipt: WitnessReceipt,
+        *,
+        deliver_at_ms: int | None = None,
+        details: dict[str, Any] = {},
+    ) -> None:
+        self.events.append(
+            NetworkEventLog(
+                event_type=event_type,
+                timestamp_ms=timestamp_ms,
+                sender_id=sender_id,
+                receiver_id=receiver_id,
+                consistency_key=commitment.consistency_key,
+                commitment_digest=commitment_digest_hex(commitment),
+                merkle_root=commitment.merkle_root,
+                decision=receipt.decision,
+                deliver_at_ms=deliver_at_ms,
+                details=details,
+            )
+        )
+
+    def _compute_delay(self) -> int:
+        if self.reorder_rate > 0 and self.random.random() < self.reorder_rate:
+            return int(self.random.uniform(0, max(1, self.base_delay_ms // 2)))
+        if self.jitter_ms <= 0:
+            return self.base_delay_ms
+        return self.base_delay_ms + int(self.random.uniform(0, self.jitter_ms))
+
+    def send_gossip(
+        self,
+        sender_id: str,
+        receiver_id: str,
+        commitment: Commitment,
+        receipt: WitnessReceipt,
+        *,
+        send_time_ms: int | None = None,
+    ) -> None:
+        now_ms = send_time_ms if send_time_ms is not None else self.current_time_ms
+        self._log_event(
+            "sent",
+            now_ms,
+            sender_id,
+            receiver_id,
+            commitment,
+            receipt,
+            deliver_at_ms=None,
+            details={
+                "base_delay_ms": self.base_delay_ms,
+                "jitter_ms": self.jitter_ms,
+                "loss_rate": self.loss_rate,
+                "duplicate_rate": self.duplicate_rate,
+                "reorder_rate": self.reorder_rate,
+            },
+        )
+
+        if self.random.random() < self.loss_rate:
+            self._log_event(
+                "dropped",
+                now_ms,
+                sender_id,
+                receiver_id,
+                commitment,
+                receipt,
+                deliver_at_ms=None,
+            )
+            return
+
+        delay = self._compute_delay()
+        self._enqueue_event(sender_id, receiver_id, commitment, receipt, now_ms + delay)
+
+        if self.random.random() < self.duplicate_rate:
+            duplicate_delay = delay + int(max(1, self.base_delay_ms * 0.1))
+            self._log_event(
+                "duplicated",
+                now_ms,
+                sender_id,
+                receiver_id,
+                commitment,
+                receipt,
+                deliver_at_ms=now_ms + duplicate_delay,
+            )
+            self._enqueue_event(
+                sender_id,
+                receiver_id,
+                commitment,
+                receipt,
+                now_ms + duplicate_delay,
+            )
+
+    def _enqueue_event(
+        self,
+        sender_id: str,
+        receiver_id: str,
+        commitment: Commitment,
+        receipt: WitnessReceipt,
+        deliver_at_ms: int,
+    ) -> None:
+        self._sequence += 1
+        self._queue.put_nowait(
+            ScheduledGossip(
+                deliver_at_ms=deliver_at_ms,
+                order=self._sequence,
+                sender_id=sender_id,
+                receiver_id=receiver_id,
+                commitment=commitment,
+                receipt=receipt,
+            )
+        )
+
+    async def run_until_empty(self) -> None:
+        while not self._queue.empty():
+            scheduled = await self._queue.get()
+            self.current_time_ms = max(self.current_time_ms, scheduled.deliver_at_ms)
+            handler = self.handlers.get(scheduled.receiver_id)
+            if handler is None:
+                self._log_event(
+                    "ignored",
+                    self.current_time_ms,
+                    scheduled.sender_id,
+                    scheduled.receiver_id,
+                    scheduled.commitment,
+                    scheduled.receipt,
+                    deliver_at_ms=scheduled.deliver_at_ms,
+                )
+                continue
+            self._log_event(
+                "delivered",
+                self.current_time_ms,
+                scheduled.sender_id,
+                scheduled.receiver_id,
+                scheduled.commitment,
+                scheduled.receipt,
+                deliver_at_ms=scheduled.deliver_at_ms,
+            )
+            await handler(scheduled.commitment, scheduled.receipt)
+
+    def broadcast_gossip(
+        self,
+        sender_id: str,
+        receiver_ids: List[str],
+        commitment: Commitment,
+        receipt: WitnessReceipt,
+        *,
+        send_time_ms: int | None = None,
+    ) -> None:
+        for receiver_id in receiver_ids:
+            self.send_gossip(
+                sender_id,
+                receiver_id,
+                commitment,
+                receipt,
+                send_time_ms=send_time_ms,
+            )
